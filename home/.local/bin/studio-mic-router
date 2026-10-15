@@ -1,0 +1,215 @@
+#!/usr/bin/env python3
+from __future__ import annotations
+
+import json
+import re
+import subprocess
+import sys
+import time
+from pathlib import Path
+
+
+def load_dump():
+    raw = subprocess.check_output(["pw-dump", "-N"], text=True)
+    return json.loads(raw)
+
+
+def props(obj):
+    return (obj.get("info") or {}).get("props") or {}
+
+
+def node_display_names(node):
+    if not node:
+        return []
+    p = props(node)
+    vals = [
+        p.get("node.description"),
+        p.get("node.nick"),
+        p.get("node.name"),
+        p.get("application.name"),
+        p.get("client.name"),
+        p.get("media.name"),
+    ]
+    return [str(v) for v in vals if v]
+
+
+def is_audio_port(port):
+    p = props(port)
+    fmt = str(p.get("format.dsp") or "").casefold()
+    # Native audio ports normally have audio.channel. JACK audio ports may only
+    # expose format.dsp. Reject MIDI and other control ports unconditionally.
+    return bool(p.get("audio.channel")) or "audio" in fmt
+
+
+def exact_alias_matches(exact_alias, port, node):
+    p = props(port)
+    port_alias = str(p.get("port.alias") or "")
+    port_name = str(p.get("port.name") or "")
+
+    if port_alias == exact_alias or port_name == exact_alias:
+        return True
+
+    # Carla/JACK/PipeWire can expose the same visible port as either a full
+    # alias ("Carla:audio-out1") or as node="Carla", port="audio-out1".
+    if ":" in exact_alias:
+        node_hint, port_hint = exact_alias.rsplit(":", 1)
+        names = node_display_names(node)
+        node_ok = any(n.casefold() == node_hint.casefold() for n in names)
+        port_ok = (
+            port_name.casefold() == port_hint.casefold()
+            or port_alias.casefold().endswith(":" + port_hint.casefold())
+        )
+        return node_ok and port_ok
+
+    return False
+
+
+def find_port(spec, direction, dump, nodes_by_id):
+    exact_alias = str(spec.get("alias") or "")
+    wanted_nodes = {str(x).casefold() for x in spec.get("node_names", [])}
+    node_regex = str(spec.get("node_regex") or "")
+    port_regex = str(spec.get("port_regex") or "")
+    wanted_channel = str(spec.get("channel") or "")
+
+    for port in dump:
+        if port.get("type") != "PipeWire:Interface:Port":
+            continue
+        info = port.get("info") or {}
+        if info.get("direction") != direction:
+            continue
+        if not is_audio_port(port):
+            continue
+
+        p = props(port)
+        node = nodes_by_id.get(p.get("node.id"))
+
+        # IMPORTANT: an alias-only route is exact. If it does not match this
+        # port, do NOT fall through to an unconstrained first port. The old
+        # router did that and could select a MIDI port.
+        if exact_alias:
+            if exact_alias_matches(exact_alias, port, node):
+                return port
+            if not (wanted_nodes or node_regex or port_regex or wanted_channel):
+                continue
+
+        names = node_display_names(node)
+
+        if wanted_nodes and not any(n.casefold() in wanted_nodes for n in names):
+            continue
+        if node_regex and not any(re.search(node_regex, n, re.I) for n in names):
+            continue
+        if wanted_channel and str(p.get("audio.channel") or "") != wanted_channel:
+            if not port_regex:
+                continue
+        if port_regex:
+            candidates = [
+                str(p.get("port.name") or ""),
+                str(p.get("port.alias") or ""),
+                str(p.get("object.path") or ""),
+            ]
+            if not any(re.search(port_regex, c, re.I) for c in candidates):
+                continue
+
+        # Never accept an unconstrained fallback.
+        if not (wanted_nodes or node_regex or port_regex or wanted_channel):
+            continue
+        return port
+
+    return None
+
+
+def link_exists(out_id, in_id, dump):
+    for obj in dump:
+        if obj.get("type") != "PipeWire:Interface:Link":
+            continue
+        info = obj.get("info") or {}
+        if info.get("output-port-id") == out_id and info.get("input-port-id") == in_id:
+            return True
+    return False
+
+
+def create_link(out_id, in_id):
+    subprocess.run(
+        ["pw-link", str(out_id), str(in_id)],
+        check=True,
+        stdout=subprocess.DEVNULL,
+        stderr=subprocess.PIPE,
+        text=True,
+    )
+
+
+def display_port(port):
+    p = props(port)
+    return str(p.get("port.alias") or p.get("port.name") or port.get("id"))
+
+
+def main():
+    if len(sys.argv) != 2:
+        print(f"Usage: {sys.argv[0]} /path/to/router.json", file=sys.stderr)
+        return 2
+
+    config_path = Path(sys.argv[1])
+    config = json.loads(config_path.read_text(encoding="utf-8"))
+    interval = float(config.get("poll_interval_seconds", 1.0))
+    missing_interval = float(config.get("missing_log_interval_seconds", 30.0))
+    routes = config.get("routes", [])
+    missing_last = {}
+
+    print(f"studio-mic-router: loaded {len(routes)} routes from {config_path}", flush=True)
+
+    while True:
+        try:
+            dump = load_dump()
+            nodes_by_id = {
+                o.get("id"): o
+                for o in dump
+                if o.get("type") == "PipeWire:Interface:Node"
+            }
+            now = time.monotonic()
+
+            for route in routes:
+                name = route.get("name", "unnamed route")
+                out_port = find_port(route.get("out", {}), "output", dump, nodes_by_id)
+                in_port = find_port(route.get("in", {}), "input", dump, nodes_by_id)
+
+                if not out_port or not in_port:
+                    if route.get("required"):
+                        last = missing_last.get(name, 0.0)
+                        if now - last >= missing_interval:
+                            missing = []
+                            if not out_port:
+                                missing.append("output")
+                            if not in_port:
+                                missing.append("input")
+                            print(
+                                f"studio-mic-router: waiting for {name} ({', '.join(missing)} missing)",
+                                flush=True,
+                            )
+                            missing_last[name] = now
+                    continue
+
+                out_id = out_port["id"]
+                in_id = in_port["id"]
+                if link_exists(out_id, in_id, dump):
+                    continue
+
+                try:
+                    create_link(out_id, in_id)
+                    print(
+                        f"studio-mic-router: linked {name}: "
+                        f"{display_port(out_port)} -> {display_port(in_port)}",
+                        flush=True,
+                    )
+                    dump = load_dump()
+                except subprocess.CalledProcessError as exc:
+                    err = (exc.stderr or "").strip()
+                    print(f"studio-mic-router: failed {name}: {err}", file=sys.stderr, flush=True)
+
+        except Exception as exc:
+            print(f"studio-mic-router: {exc}", file=sys.stderr, flush=True)
+
+        time.sleep(max(0.2, interval))
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

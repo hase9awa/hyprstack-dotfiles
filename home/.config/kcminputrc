@@ -1,0 +1,8 @@
+[Libinput][1133][49291][Logitech G502 HERO Gaming Mouse]
+PointerAcceleration=0.000
+PointerAccelerationProfile=1
+ScrollMethod=4
+
+[Mouse]
+cursorSize=20
+cursorTheme=Bibata-Original-Classic

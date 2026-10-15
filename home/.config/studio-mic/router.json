@@ -1,0 +1,98 @@
+{
+  "poll_interval_seconds": 1.0,
+  "missing_log_interval_seconds": 30.0,
+  "routes": [
+    {
+      "name": "Microphone L -> Carla L",
+      "required": true,
+      "out": {
+        "alias": "E2x2 Analog Surround 2.1:capture_FL"
+      },
+      "in": {
+        "alias": "Carla:audio-in1"
+      }
+    },
+    {
+      "name": "Microphone R -> Carla R",
+      "required": true,
+      "out": {
+        "alias": "E2x2 Analog Surround 2.1:capture_FR"
+      },
+      "in": {
+        "alias": "Carla:audio-in2"
+      }
+    },
+    {
+      "name": "Carla L -> Studio Mic L",
+      "required": true,
+      "out": {
+        "alias": "Carla:audio-out1"
+      },
+      "in": {
+        "node_names": [
+          "Studio Mic Input",
+          "studio_mic_input"
+        ],
+        "channel": "FL"
+      }
+    },
+    {
+      "name": "Carla R -> Studio Mic R",
+      "required": true,
+      "out": {
+        "alias": "Carla:audio-out2"
+      },
+      "in": {
+        "node_names": [
+          "Studio Mic Input",
+          "studio_mic_input"
+        ],
+        "channel": "FR"
+      }
+    },
+    {
+      "name": "Carla R -> REAPER R",
+      "required": false,
+      "out": {
+        "alias": "Carla:audio-out2"
+      },
+      "in": {
+        "alias": "REAPER:in2"
+      }
+    },
+    {
+      "name": "Carla L -> REAPER L",
+      "required": false,
+      "out": {
+        "alias": "Carla:audio-out1"
+      },
+      "in": {
+        "alias": "REAPER:in1"
+      }
+    },
+    {
+      "name": "REAPER L -> EasyEffects L",
+      "required": false,
+      "out": {
+        "alias": "REAPER:out1"
+      },
+      "in": {
+        "alias": "Easy Effects Sink:playback_FL",
+        "node_regex": "Easy.*Effects.*Sink|easyeffects_sink",
+        "channel": "FL"
+      }
+    },
+    {
+      "name": "REAPER R -> EasyEffects R",
+      "required": false,
+      "out": {
+        "alias": "REAPER:out2"
+      },
+      "in": {
+        "alias": "Easy Effects Sink:playback_FR",
+        "node_regex": "Easy.*Effects.*Sink|easyeffects_sink",
+        "channel": "FR"
+      }
+    }
+  ]
+}

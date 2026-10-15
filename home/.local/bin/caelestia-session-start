@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+set -euo pipefail
+# Connect the wallet daemon to this login's PAM environment before desktop apps start.
+if [[ -n "${PAM_KWALLET5_LOGIN:-}" && -S "$PAM_KWALLET5_LOGIN" ]]; then
+    timeout 5 /usr/lib/pam_kwallet_init || true
+fi
+session_vars=(WAYLAND_DISPLAY HYPRLAND_INSTANCE_SIGNATURE XDG_CURRENT_DESKTOP XDG_SESSION_TYPE XDG_SESSION_DESKTOP QT_QPA_PLATFORM QT_QPA_PLATFORMTHEME QT_WAYLAND_DISABLE_WINDOWDECORATION XCURSOR_THEME XCURSOR_SIZE ELECTRON_OZONE_PLATFORM_HINT DISPLAY PATH)
+if [[ -n "${PAM_KWALLET5_LOGIN:-}" ]]; then
+    session_vars+=(PAM_KWALLET5_LOGIN)
+fi
+systemctl --user import-environment "${session_vars[@]}"
+dbus-update-activation-environment --systemd "${session_vars[@]}"
+systemctl --user daemon-reload
+systemctl --user start caelestia-session.target

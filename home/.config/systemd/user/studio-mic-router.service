@@ -1,0 +1,13 @@
+[Unit]
+Description=Studio Mic - resilient PipeWire routing
+After=pipewire.service wireplumber.service studio-mic-carla.service
+Wants=pipewire.service wireplumber.service studio-mic-carla.service
+
+[Service]
+Type=simple
+ExecStart=/home/hasegawa/.local/bin/studio-mic-router /home/hasegawa/.config/studio-mic/router.json
+Restart=always
+RestartSec=1
+
+[Install]
+WantedBy=default.target

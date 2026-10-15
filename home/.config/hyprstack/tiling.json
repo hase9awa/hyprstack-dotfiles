@@ -1,0 +1,11 @@
+{
+  "desktopFrame": true,
+  "autoscroll": true,
+  "windowRounding": 15,
+  "gapsOut": 25,
+  "focusBorderColor": "palette_dragonBlue",
+  "gaps": true,
+  "gapsIn": 5,
+  "focusBorderWidth": 3,
+  "focusOnHover": false
+}

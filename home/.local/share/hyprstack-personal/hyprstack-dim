@@ -1,0 +1,17 @@
+#!/usr/bin/env python3
+"""Publish temporary idle dimming for the personal brightness service."""
+import subprocess
+import sys
+
+def main():
+    if len(sys.argv) != 2 or sys.argv[1] not in ("dim", "restore"):
+        sys.exit("Usage: hyprstack-dim dim|restore")
+    operation = sys.argv[1]
+    result = subprocess.run(["hyprctl", "eval", f"hyprstack_brightness.{operation}()"],
+                            check=True, capture_output=True, text=True)
+    if result.stdout.strip() != "ok":
+        raise RuntimeError(result.stdout)
+
+
+if __name__ == "__main__":
+    main()

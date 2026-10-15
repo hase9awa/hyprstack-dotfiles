@@ -1,0 +1,13 @@
+[StreamInputs]
+inputDevice=alsa_input.usb-Topping_E2x2-00.analog-surround-21
+visiblePage=pluginsPage
+
+[StreamOutputs]
+outputDevice=alsa_output.usb-Topping_E2x2-00.analog-surround-21
+plugins=equalizer#0
+visiblePage=pluginsPage
+visiblePlugin=equalizer#0
+
+[Window]
+autostartOnLogin=true
+visiblePage=inputPage

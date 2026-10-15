@@ -1,0 +1,1 @@
+../../../hyprstack/shell/assets/hyprstack_cli.py

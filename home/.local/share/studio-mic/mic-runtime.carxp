@@ -1,0 +1,1449 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE CARLA-PROJECT>
+<CARLA-PROJECT VERSION='2.5'>
+ <EngineSettings>
+  <ForceStereo>true</ForceStereo>
+  <PreferPluginBridges>false</PreferPluginBridges>
+  <PreferUiBridges>true</PreferUiBridges>
+  <UIsAlwaysOnTop>false</UIsAlwaysOnTop>
+  <MaxParameters>200</MaxParameters>
+  <UIBridgesTimeout>4000</UIBridgesTimeout>
+ </EngineSettings>
+
+ <Transport>
+  <BeatsPerMinute>120</BeatsPerMinute>
+ </Transport>
+
+ <!-- TDR Nova -->
+ <Plugin>
+  <Info>
+   <Type>VST3</Type>
+   <Name>TDR Nova</Name>
+   <Binary>/home/hasegawa/.vst3/yabridge/TDR Nova.vst3</Binary>
+   <Label>TDR Nova</Label>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0xd</Options>
+
+   <CustomData>
+    <Type>http://kxstudio.sf.net/ns/carla/property</Type>
+    <Key>CarlaSkinIsCompacted</Key>
+    <Value>false</Value>
+   </CustomData>
+
+   <Chunk>
+VkMyIdoaAAA8P3htbCB2ZXJzaW9uPSIxLjAiIGVuY29kaW5nPSJVVEYtOCI/PiA8VlNUM1BsdWdpblN0YXRlPjxJQ29tcG9uZW50PjUwNzcuVk1HY1dBLi4u
+Zi4uLi5QLi4uLi4uTHpYdHNELi5MUXVGSXpQbkEuLi5ILlVqVVNYLkhmLkIuLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4u
+Li4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4u
+Li4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLlNUaFVDSVNIOEtBLi52eU8zMEZhZlhXWXhNV1p1NFZPaERpS3ZIQkhrNDFYdVFW
+WnRjVk9oVEVVRjBCTmg3aU9mdkNVRElrU3VZV1hmSFZYdFExVGt3VllpUVdZajhVTDhIeFN0SUJIaEVsYWpFelh6a2xjazhVTDhIeFN0SUJIaEVsYWpjVFhv
+NDFXd3ppSHYzQkxoLmhYZzRGWVE4VUw4SEJMdFRDTGguaFhnNEZZRklXWXc4VUw4SFJMeC5pSGZIVlh0UUZVNEFXWWVFU09oSFRZcndsSGZIVlh0UUZRNDRW
+UGlRV1oxVTFXd3ppSE80bEhmSFZYdFFGUTQ0RlVuSVdZeWcxYXJRMVd3emlIc2JpS3ZIQkhoRWxhalFUZHRJVVh6azFhZUVTT2hIaUt2SEJIaEVsYWpRVGR0
+TUVicmtGY2VFU09oN2phaC5oWGc0RllEa21hQVFHY2dNMVplRVNPaFRpS3ZIQkhoRWxhalFUZHRJVVlyVVZYeVUxV3d6aUh4LkNMaC5oWGc0RllTVUZha01G
+Y2tRMVd4emlIT1lsWWguaFhnNEZZQU1GY29ZV1llSVNPaDdqWWxJQkhoRWxhamNUWG80MVd4emlIdjNCTGguaFhnNEZZUThrTDhIUkx0LkNMaC5oWGc0RllG
+SVdZdzhrTDhIeE12LkNMaC5oWGc0RllUa0diazhrTDhIaFBrd0ZhaC5oWGc0RllEa21hQU1GY29ZV1llSVNPaDdqYWguaFhnNEZZRGttYVRnbGJrTUdadXdG
+WWVJU09oenhMdjNCTGguaFhnNEZZRGttYVJFRmNvODFXeHppSDAzQkxoLmhYZzRGWURrbWFTQUdhb1EyV3h6aUhPNGxIZkhWWHRRRlE0NFZQelFXWGlzMVd4
+emlIMDNCTGguaFhnNEZZRGttYVJVRmFrRTFiazhrTDhIaEx2LmlIZkhWWHRRMVRrd1ZZaVFXWWo4MEw4SHhTbFlsSGZIVlh0UVZQaVFXWjFVMVd5emlIT1ls
+WWguaFhnNEZZR0VWWnQ4MEw4SEJMdC5pSGZIVlh0UVZUZU1TT2guaUswLmlIZkhWWHRRbFF4VVZiZU1TT2hIaUx2LmlIZkhWWHRRRlU0QVdZZU1TT2hIVFly
+d2xIZkhWWHRRRlE0NFZQaVFXWjFVMVd5emlIT1lsWWguaFhnNEZZRGttYVRnbGJrTUdadXdGWWVNU09oLmlLdkhCSGhFbGFqUVRkdElVWHprMWFlTVNPaEhp
+S3ZIQkhoRWxhalFUZHRNRWJya0ZjZU1TT2g3amFoLmhYZzRGWURrbWFBUUdjZ00xWmVNU09oVGlLdkhCSGhFbGFqUVRkdElVWXJVVlh5VTFXeXppSHdYQ0xo
+LmhYZzRGWVNVRmFrTUZja1ExV3p6aUhPWWxZaC5oWGc0RllBTUZjb1lXWWVRU09oN2pZbElCSGhFbGFqY1RYbzQxV3p6aUh2M0JMaC5oWGc0RllROEVNOEhC
+THRYQ0xoLmhYZzRGWUZJV1l3OEVNOEhoTXYuQ0xoLmhYZzRGWVRrR2JrOEVNOEhCUm9jRlpmTGtIZkhWWHRRRlE0NFZQaVFXWjFVMVd6emlIT1lsWWguaFhn
+NEZZRGttYVRnbGJrTUdadXdGWWVRU09oLmlLdkhCSGhFbGFqUVRkdElVWHprMWFlUVNPaEhpS3ZIQkhoRWxhalFUZHRNRWJya0ZjZVFTT2g3amFoLmhYZzRG
+WURrbWFBUUdjZ00xWmVRU09oUGlLdkhCSGhFbGFqUVRkdElVWXJVVlh5VTFXenppSHhMaUhmZkZiU1VGYWtNRmNrUTFXc0UxYnpVbGI4SHhTbFlsSGZmRmJB
+TUZjb1lXWWUwVlh5UVdZeDBpSE80bEhmZkZiRklXWXc4VWFnTUdja0lXT2hYU01oLkJadlFVZHZVMVdzRTFielVsYjhIaEx6UGxQdTcxWHpJQkhyQTJUa3dW
+WWlRV1lqOFVhZ01HY2tJV09oN2pZbElCSHJBV1BpUVdaMVUxV3NFMWJ6VWxiOEh4U2xZbEhmdkZiRklXWXc4VWFnTUdja0lXT2hIU012LkNMaC5CYXZRVWR2
+VTFXc0UxYnpVbGI4SGhMelBsUHU3MVh6SUJIaEVsYWpjVFhvNDFXMmtGWWswaUh2M0JMaC5oWGc0RllEa21hQU1GY29ZV1llY1daalVWT2g3allsSUJIaEVs
+YWpRVGR0UUVaeFUxYm44RmFqODBjb1FWWThIQkx0LmlIZkhWWHRRRlE0NGxUZ1FXWnU4MGNvUVZZOEhSTHRUaUhmSFZYdFFGUTQ0VlB6UVdYaXMxVzJrRllr
+MGlIMzNCTGguaFhnNEZZRGttYVJVRmFrRTFiazgwY29RVlk4SGhMdi5pSGZIVmR2RTFieThVYWdNR2NrSVdPaDdqWWxJQkhqVUZhekUxV3NFMWJ6VWxiOEh4
+U2xZbEhmUGxiNDBUWjM4VWFnTUdja0lXT2guaUt2SEJIbUVWWnQ4VWFnTUdja0lXT2guaUt2SEJIa0VXUDBRMmFHRVZadEFVWHhFVmE4SHhTbFlsSGZEV2Nn
+d1ZaemtHVGdJV1hzMGlIUElXWWlrMWJrMGhIZkxGWmc0bGFrdzFiUEVsYmcwVk9oenphdDhsSGZEbGFnd1ZkNVVsYk04RllrQVVYeEVWYThIUlB0RUZhNG9X
+WXhvQ0hPWWxZaC5CWW9NR2JyRVZkRUVtVGc0MVlrQVVYeEVWYThIUkt1ckJId0hDSGpJakhmUFZaeUFHYWdrbVFGUWtUZzQxWWtBVVh4RVZhOEhCTTMuQllC
+SUJIeWtGWWtNRlpna2xhTThGWWtBVVh4RVZhOEhSUnRRR0hTTWpIZkRsYWd3VmQ1VWxiU0FXWWtRRlRnSVdYczBpSE44bGJzRUZhaC54YnV3MWE4SHhTbFls
+SDl2Q2F1Y1ZaaUVGYWZIVlh0UTFUa3dWWWlRV1lqOFVMOEhSTHQuaUhmSFZYdFFWUGlRV1oxVTFXd3ppSHczQkxoLmhYZzRGWUdFVlp0OFVMOEhCTHQuaUhm
+SFZYdFFWVGVFU09oLmlLMEhCSGhFbGFqWWpia0UyV3d6aUh3SENMdC5pSGZIVlh0UUZVNEFXWWVFU09oRGlLdkhCSGhFbGFqUVRkdEV6WHprbGNrOFVMOEhS
+THQuaUhmSFZYdFFGUTQ0RlVuSVdZeWcxYXJRMVd3emlIc1hpSzRYeU15WENOMkhTTDRYU0w0YlNNaC5oWGc0RllEa21hUkVGY284MVd3emlIeDNCTGguaFhn
+NEZZRGttYVNBR2FvUTJXd3ppSHczQkxoLmhYZzRGWURrbWFBUUdjZ00xWmVFU09oVGlLdkhCSGhFbGFqUVRkdElVWXJVVlh5VTFXd3ppSHguQ0x0LmlIZkhW
+WHRRMVRrd1ZZaVFXWWo4a0w4SEJMdC5pSGZIVlh0UVZQaVFXWjFVMVd4emlIdjNCTGguaFhnNEZZR0VWWnQ4a0w4SEJMdC5pSGZIVlh0UVZUZUlTT2hEaUt2
+SEJIaEVsYWpZamJrRTJXeHppSDIuQ0x2M0JMaC5oWGc0RllUa0diazhrTDhIUkx0LmlIZkhWWHRRRlE0NFZQaVFXWjFVMVd4emlIdzNCTGguaFhnNEZZRGtt
+YVRnbGJrTUdadXdGWWVJU09oenhMdjNCTGguaFhnNEZZRGttYVJFRmNvODFXeHppSDAzQkxoLmhYZzRGWURrbWFTQUdhb1EyV3h6aUh3M0JMaC5oWGc0RllE
+a21hQVFHY2dNMVplSVNPaFRpS3ZIQkhoRWxhalFUZHRJVVlyVVZYeVUxV3h6aUh4LkNMdC5pSGZIVlh0UTFUa3dWWWlRV1lqODBMOEhCTHQuaUhmSFZYdFFW
+UGlRV1oxVTFXeXppSHYzQkxoLmhYZzRGWUdFVlp0ODBMOEhCTHQuaUhmSFZYdFFWVGVNU09oLmlLMEhCSGhFbGFqWWpia0UyV3l6aUh4SENMdjNCTGguaFhn
+NEZZVGtHYms4MEw4SFJMdC5pSGZIVlh0UUZRNDRWUGlRV1oxVTFXeXppSHYzQkxoLmhYZzRGWURrbWFUZ2xia01HWnV3RlllTVNPaC5pS3ZIQkhoRWxhalFU
+ZHRJVVh6azFhZU1TT2hIaUt2SEJIaEVsYWpRVGR0TUVicmtGY2VNU09oRGlLdkhCSGhFbGFqUVRkdEVEY3pFMVhxODBMOEhSTXQuaUhmSFZYdFFGUTQ0bFRr
+d1ZZZ01XWWVNU09oRGlNdjNCTGguaFhnNEZZU1VGYWtNRmNrUTFXenppSHYzQkxoLmhYZzRGWUFNRmNvWVdZZVFTT2guaUt2SEJIaEVsYWpjVFhvNDFXenpp
+SHYzQkxoLmhYZzRGWVE4RU04SEJMdFhpSGZIVlh0UWxReFVWYmVRU09oWENMdi5pS3ZIQkhoRWxhalFVZHZVMVd6emlIeDNCTGguaFhnNEZZRGttYUFNRmNv
+WVdZZVFTT2guaUt2SEJIaEVsYWpRVGR0UUVaeFUxYm44RmFqOEVNOEhCTHQuaUhmSFZYdFFGUTQ0bFRnUVdadThFTThIaEx0LmlIZkhWWHRRRlE0NDFUdndW
+Wno4RU04SFJMdC5pSGZIVlh0UUZRNDRWUHpRV1hpczFXenppSHozQkxoLmhYZzRGWURrbWFSVUZha0UxYms4RU04SGhMeTNCTGguQlp2TVVZclUxWHpVRlll
+MFZYeVFXWXgwaUh2M0JMaC5CWnZFelh6a2xjazhVYWdNR2NrSVdPaERpS3ZIQkhuQW1ReFVWYmUwVlh5UVdZeDBpSDFUaUt2SEJIbkFHVTRBV1llMFZYeVFX
+WXgwaUh4M0JMaC5CYXZNVVlyVTFYelVGWWUwVlh5UVdZeDBpSHYzQkxoLkJhdkV6WHprbGNrOFVhZ01HY2tJV09oLmlLdkhCSHJBbVF4VVZiZTBWWHlRV1l4
+MGlIeFRDTHYuaUt2SEJIckFHVTRBV1llMFZYeVFXWXgwaUh4M0JMaC5oWGc0RllHRVZadDgwY29RVlk4SEJMdC5pSGZIVlh0UUZRNDRWUGlRV1oxVTFXMmtG
+WWswaUh2M0JMaC5oWGc0RllEa21hVGdsYmtNR1p1d0ZZZWNXWmpVVk9oLmlLdkhCSGhFbGFqUVRkdElVWHprMWFlY1daalVWT2hEaUswSEJIaEVsYWpRVGR0
+RURjekUxWHE4MGNvUVZZOEhCTnQuaUhmSFZYdFFGUTQ0bFRrd1ZZZ01XWWVjV1pqVVZPaEhDTHYzQkxoLmhYNEFXWHlNMldzRTFielVsYjhIQkx0LmlIZlBW
+WXJRV1hlMFZYeVFXWXgwaUh2M0JMaC5CWXhrV1NvZzJXc0UxYnpVbGI4SEJMdC5pSGZiVlhvNDFXc0UxYnpVbGI4SEJMdC5pSGZUVmJBVUdjdWNUWG80RlRn
+SVdYczBpSHYzQkxoLlJiMEVGYW9RV2RQRWxiZzBWT2hIaUt2SEJIaWdWWHQ0VllyTUdUZ0lXWHMwaUh2M0JMaC5SWHRFRmE0b1dZeDB6YWpVRlRnSVdYczBp
+SHkzQkxoLkJZb01HYnJFVmRFRW1UZzQxWWtBVVh4RVZhOEhCTHQuaUhmUFZaeUFHYWdrbVFGUWtUZzQxWWtBVVh4RVZhOEhCTHQuaUhmTFdaalUxWG5FVlp0
+MHphalVGVGdJV1hzMGlIdjNCTGguUlh0RUZhNG9XWXhNRWJrVUZZUEVsYmcwVk9oRGlLdkhCSHk4RmF1MGlIdjNCTGg3aE83Lm1ia01XWXpNR0hnTUZjb1lX
+WThIUkxoM0NPdklXWXlVRmNmN2tTdThVT2hEaUhmN2tTZzBWWWUwaUhEVWxZZ1VHYXpJeEs5dnlLdklXWXlVRmN5NENPQUF4V0FNRmNvWVdZZTBpSHdIeEs5
+dmlQZjdVUGlRV1oxVTFXOEhCTGgueFdMa2xhcVVGWWUwaUh3SHhLOXZTY3RRMWE5dlNjb0F4YXYwaUh5SEJIdjRWT2hQVFlsRVZjclFtSGZEbFg4SEJMaC5C
+YjF3Rkw4SEJMdC5pSGYubWNyRVNPaERpS3ZIQkh2WUdheHppSHMuaUsySENMdi5DTHlmaU14TENOdmpDTndIQkh2WUdheXppSHYzeEwzZlNMeWJpTDBYaUx4
+WFNOekhpTWguQmIxd0ZNOEhSTnYzeEwyYnlNemZ5TDJQeU00LnlNMkhCSHZZR2EwemlIdjNCTjEuQ0x2LkNMd1B5THZUU0x3UHlNaC5CYjF3bE04SEJMdC5p
+SGYubWNyY1NPaC5pS3ZIQkh2WUdhM3ppSHczUk1oLkJiMXdWTjhIUkx0LmlIZi5tY3JFQ0w4SGhMdjNCTGguQmIxd1ZMd3ppSHguQ0x0LmlIZi5tY3JFaUw4
+SEJMdC5pSGYubWNyRXlMOEhSTHQuaUhmLm1jckVDTThIQkx0LmlIZi5tY3JFU004SEJMdFB5TTFMeUx6YlNONEhDTnhIeU0yVGlIZi5tY3JFaU04SEJNdi5p
+S3ZIQkh2WUdhd2JTT2hEaUt2SEJIdllHYXdmU09oLmlLdkhCSHZZR2F3alNPaC5pS3ZIQkh2WUdheC5TT2hIaUt2SEJIdllHYXhEU09oRGlLdkhCSHZZR2F4
+SFNPaERDTHQuaUhmLm1jckl5TDhIUkwzLmlLdkhCSHZZR2F4UFNPaERpS3ZIQkh2WUdheFRTT2hEaUt2SEJIdllHYXhYU09oLmlLdkhCSHZZR2F4YlNPaC5p
+SzBIQkh2WUdheGZTT2hIaUx2LmlLdkhCSHZZR2F4alNPaERpS3ZIQkh2WUdheS5TT2guaUt2SEJIdllHYXlEU09oLmlLdkhCSHZZR2F5SFNPaEhpS3ZIQkh2
+WUdheUxTT2hEaUt2SEJIdllHYXlQU09oVGlLdkhCSHZZR2F5VFNPaERpTXYzQkxoLkJiMXcxTDF6aUh2M0JMaC5CYjF3MUwyemlIdzNCTGguQmIxdzFMM3pp
+SHYzQkxoLkJiMXcxTDR6aUh2M2hNaC5CYjF3Rk12emlIMS5DTHYzQkxoLkJiMXdGTXd6aUh4M0JMaC5CYjF3Rk14emlIdjNCTGguQmIxd0ZNeXppSHYzQkxo
+LkJiMXdGTXp6aUh4M0JMaC5CYjF3Rk0wemlIdzNCTGguQmIxd0ZNMXppSHozQkxoLkJiMXdGTTJ6aUh4TGlLdkhCSHZZR2F6ZlNPaC5pS3ZIQkh2WUdhempT
+T2guaUt2SEJIdllHYTAuU09oRFNNdC5pSGYubWNyVVNMOEhoTHQuaUhmLm1jclVpTDhIQkx0LmlIZi5tY3JVeUw4SEJMdC5pSGYubWNyVUNNOEh4THYuQ0x2
+M0JMaC5CYjF3Vk0wemlIeDNCTGguQmIxd1ZNMXppSHYzQkxoLkJiMXdWTTJ6aUh2M0JMaC5CYjF3Vk0zemlIdjNCTGguQmIxd1ZNNHppSHczUk1oLkJiMXds
+TXZ6aUgzM0JMaC5CYjF3bE13emlIeC5DTHQuaUhmLm1jcllpTDhIQkx0LmlIZi5tY3JZeUw4SEJMdC5pSGYubWNyWUNNOEhCTHQuaUhmLm1jcllTTThIQkx0
+LmlIZi5tY3JZaU04SFJMdC5pSGYubWNyWXlNOEhoTHQuaUhmLm1jcllDTjhIUkx0LmlIZi5tY3JZU044SEJMdC5pSGYubWNyY0NMOEhCTHQuaUhmLm1jcmNT
+TDhIQkx0LmlIZi5tY3JjaUw4SEJMdC5pSGYubWNyY3lMOEhSTHQuaUhmLm1jcmNDTThIQkx0LmlIdTNDTzBrRkh1QVdPaERpSGYuV1o4SEJNM0hCSHRZV09o
+RGlLdkh4Szl2U2NvQXhhdjBpSHdIQkh2a1ZPaFR5TGguaGExMGlIdzNCTGg3aE83VFdaZjdGYjhIUkxoLkJibzBpSDNIQkh0WVdPaC5pSzNYaU0xWGlNMWJD
+TTFEeUw0VGlMMUh4Szl2U2NvQXhhdjBpSHdIQkh2a1ZPaGJpSGYzbGM4SEJMdGZTTDRqU040alNOeGZDTTJQQ014WGlIdTNDTzBrRkh1QVdPaERpSGYuV1o4
+SFJMeUhCSHRZV09oRGlLdkh4Szl2U2NvQXhhdjBpSHdIQkh2a1ZPaGJpSGYzbGM4SEJMdGJDTnliQ04wSGlMeWppTXZmeU0xVGlIdTNDTzBrRkh1QVdPaERp
+SGYuV1o4SHhNaC5oYTEwaUh2M0JOei5TTTNYQ00zTENNMmZTTXpYU0xoN2hPN1RXWmY3RmI4SFJMaC5CYm8waUgzSEJIdFlXT2guaUsyLmlMMFBpTTFUaU13
+TFNMMlBDTXpIeEs5dlNjb0F4YXYwaUh3SEJIdmtWT2hmaUhmM2xjOEhCTHRYaUwyRENOeExDTHpmU000RGlNd1BpSHUzQ08wa0ZIdUFXT2hEaUhmLldaOEhC
+TmguaGExMGlIdjNSTXdmQ054TENNelBDTnpMaUw0SGlMaC5SWGlRV1oxVVZPaERpSHUzQ091VG1hajhsTzdqbGFsOEZIMVVsYnlrMWF0MGlIeDNoTHRIaUh1
+M0NPdkVsYmcwRkhvNDFiekVsYWlVVk9oUEVRUkFoU3VZV1hmZlJMb0h4Szl2eUtUUWpUTjhsY2c0Qy4uLi4uLi4uLi4uLi4uLi4uLi4uLi5uVFVDVURUeGts
+Y2dRV1lERUZjZ0E8L0lDb21wb25lbnQ+PC9WU1QzUGx1Z2luU3RhdGU+AA==
+   </Chunk>
+  </Data>
+ </Plugin>
+
+ <!-- LSP Expander Stereo -->
+ <Plugin>
+  <Info>
+   <Type>LV2</Type>
+   <Name>LSP Expander Stereo</Name>
+   <URI>http://lsp-plug.in/plugins/lv2/expander_stereo</URI>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x1</Options>
+
+   <Parameter>
+    <Index>0</Index>
+    <Name>Show pre-mix overlay</Name>
+    <Symbol>showpmx</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>1</Index>
+    <Name>Input to Link mix</Name>
+    <Symbol>in2lk</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>2</Index>
+    <Name>Link to Input mix</Name>
+    <Symbol>lk2in</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>3</Index>
+    <Name>Link to Sidechain mix</Name>
+    <Symbol>lk2sc</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>4</Index>
+    <Name>Enabled</Name>
+    <Symbol>enabled</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>5</Index>
+    <Name>Input gain</Name>
+    <Symbol>g_in</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>6</Index>
+    <Name>Output gain</Name>
+    <Symbol>g_out</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>7</Index>
+    <Name>Show mix overlay</Name>
+    <Symbol>showmx</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>8</Index>
+    <Name>Show sidechain overlay</Name>
+    <Symbol>showsc</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>9</Index>
+    <Name>Pause graph analysis</Name>
+    <Symbol>pause</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>10</Index>
+    <Name>Clear graph analysis</Name>
+    <Symbol>clear</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>11</Index>
+    <Name>Stereo split</Name>
+    <Symbol>ssplit</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>12</Index>
+    <Name>Split sidechain source</Name>
+    <Symbol>sscs</Symbol>
+    <Value>5</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>13</Index>
+    <Name>Sidechain input</Name>
+    <Symbol>sci</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>14</Index>
+    <Name>Sidechain mode</Name>
+    <Symbol>scm</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>15</Index>
+    <Name>Sidechain lookahead</Name>
+    <Symbol>sla</Symbol>
+    <Value>5</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>16</Index>
+    <Name>Sidechain listen</Name>
+    <Symbol>scl</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>17</Index>
+    <Name>Sidechain source</Name>
+    <Symbol>scs</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>18</Index>
+    <Name>Sidechain reactivity</Name>
+    <Symbol>scr</Symbol>
+    <Value>10</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>19</Index>
+    <Name>Sidechain preamp</Name>
+    <Symbol>scp</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>20</Index>
+    <Name>High-pass filter mode</Name>
+    <Symbol>shpm</Symbol>
+    <Value>2</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>21</Index>
+    <Name>High-pass filter frequency</Name>
+    <Symbol>shpf</Symbol>
+    <Value>100</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>22</Index>
+    <Name>Low-pass filter mode</Name>
+    <Symbol>slpm</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>23</Index>
+    <Name>Low-pass filter frequency</Name>
+    <Symbol>slpf</Symbol>
+    <Value>20000</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>24</Index>
+    <Name>Expander mode</Name>
+    <Symbol>em</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>25</Index>
+    <Name>Attack threshold</Name>
+    <Symbol>al</Symbol>
+    <Value>0.0056234123185277</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>26</Index>
+    <Name>Attack time</Name>
+    <Symbol>at</Symbol>
+    <Value>5</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>27</Index>
+    <Name>Release threshold</Name>
+    <Symbol>rrl</Symbol>
+    <Value>0.501187205314636</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>28</Index>
+    <Name>Release time</Name>
+    <Symbol>rt</Symbol>
+    <Value>300</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>29</Index>
+    <Name>Hold time</Name>
+    <Symbol>hold</Symbol>
+    <Value>150</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>30</Index>
+    <Name>Ratio</Name>
+    <Symbol>er</Symbol>
+    <Value>2</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>31</Index>
+    <Name>Knee</Name>
+    <Symbol>kn</Symbol>
+    <Value>0.501179993152618</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>32</Index>
+    <Name>Makeup gain</Name>
+    <Symbol>mk</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>33</Index>
+    <Name>Dry gain</Name>
+    <Symbol>cdr</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>34</Index>
+    <Name>Wet gain</Name>
+    <Symbol>cwt</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>35</Index>
+    <Name>Dry/Wet balance</Name>
+    <Symbol>cdw</Symbol>
+    <Value>100</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>37</Index>
+    <Name>Sidechain level visibility Left</Name>
+    <Symbol>slv_l</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>38</Index>
+    <Name>Envelope level visibility Left</Name>
+    <Symbol>elv_l</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>39</Index>
+    <Name>Gain reduction visibility Left</Name>
+    <Symbol>grv_l</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>40</Index>
+    <Name>Input level visibility Left</Name>
+    <Symbol>ilv_l</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>41</Index>
+    <Name>Output level visibility Left</Name>
+    <Symbol>olv_l</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>48</Index>
+    <Name>Sidechain level visibility Right</Name>
+    <Symbol>slv_r</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>49</Index>
+    <Name>Envelope level visibility Right</Name>
+    <Symbol>elv_r</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>50</Index>
+    <Name>Gain reduction visibility Right</Name>
+    <Symbol>grv_r</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>51</Index>
+    <Name>Input level visibility Right</Name>
+    <Symbol>ilv_r</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>52</Index>
+    <Name>Output level visibility Right</Name>
+    <Symbol>olv_r</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <CustomData>
+    <Type>http://kxstudio.sf.net/ns/carla/property</Type>
+    <Key>CarlaSkinIsCompacted</Key>
+    <Value>false</Value>
+   </CustomData>
+
+   <CustomData>
+    <Type>http://lv2plug.in/ns/ext/atom#String</Type>
+    <Key>http://lsp-plug.in/plugins/lv2/expander_stereo/ports#link</Key>
+    <Value></Value>
+   </CustomData>
+
+   <CustomData>
+    <Type>http://lv2plug.in/ns/ext/atom#Object</Type>
+    <Key>http://lsp-plug.in/plugins/lv2/expander_stereo/preset_state</Key>
+    <Value>AAAAAFUAAABWAAAAAAAAAAEAAAARAAAAAAAAAAAAAABXAAAAAAAAAAQAAAAHAAAAAAAAAAAAAABYAAAAAAAAAAQAAAAHAAAAAAAAAAAAAAA=</Value>
+   </CustomData>
+  </Data>
+ </Plugin>
+
+ <!-- TDR Molotok -->
+ <Plugin>
+  <Info>
+   <Type>VST2</Type>
+   <Name>TDR Molotok</Name>
+   <Binary>/home/hasegawa/.vst/yabridge/TDR Molotok.so</Binary>
+   <UniqueID>1198356853</UniqueID>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0xd</Options>
+
+   <CustomData>
+    <Type>http://kxstudio.sf.net/ns/carla/property</Type>
+    <Key>CarlaSkinIsCompacted</Key>
+    <Value>false</Value>
+   </CustomData>
+
+   <Chunk>
+VkMyIcQGAAA8P3htbCB2ZXJzaW9uPSIxLjAiIGVuY29kaW5nPSJVVEYtOCI/PiA8VERSTW9sb3RvayBTaWRlSFA9IjEyMCIgU2lkZUhQT249Ik9uIiBBdHRh
+Y2s9IjEwIiBDb21wcmVzc29yTW9kZT0iMC41IiBSZWxlYXNlPSIxNTAiIFJhdGlvPSIzLjAiIFRocmVzaG9sZD0iLTI3LjgiIEtuZWU9IjAuNTAiIE1ha2V1
+cD0iNS4wIiBEcnlNaXg9IjAuMCIgT3V0cHV0PSIwLjAiIFN0ZXJlb01vZGU9Ik1vbm8iIFF1YWxpdHk9IkxpdmUiIEJ5cGFzcz0iT2ZmIiBTaWRlY2hhaW5N
+b2RlPSJJbnQuIFNDIiBEZWx0YU1vZGU9Ik9mZiIgTWV0ZXJSYW5nZT0iMzIgZEIiIE1ldGVyTW9kZT0iUmVsYXRpdmUiIE1ldGVyU291cmNlPSJFZmZlY3Rp
+dmUiIE1ldGVyU3BlZWQ9IlNsb3ciPjxsb2dpY2FsIFNpZGVIUD0iMTIwLjAiIFNpZGVIUE9uPSIxLjAiIEF0dGFjaz0iMTAuMCIgQ29tcHJlc3Nvck1vZGU9
+IjUuMCIgUmVsZWFzZT0iMTUwLjAiIFJhdGlvPSIzLjAiIFRocmVzaG9sZD0iLTI3Ljc4NTYzNjkwMTg1NTQ3IiBLbmVlPSIwLjUiIE1ha2V1cD0iNC45NjA4
+MTkyNDQzODQ3NjYiIERyeU1peD0iMC4wIiBPdXRwdXQ9IjAuMCIgU3RlcmVvTW9kZT0iMC4wIiBRdWFsaXR5PSIwLjAiIEJ5cGFzcz0iMC4wIiBTaWRlY2hh
+aW5Nb2RlPSIwLjAiIERlbHRhTW9kZT0iMC4wIiBNZXRlclJhbmdlPSI4LjAiIE1ldGVyTW9kZT0iMC4wIiBNZXRlclNvdXJjZT0iMS4wIiBNZXRlclNwZWVk
+PSIwLjAiLz48cHJlc2V0cyBhY3RpdmU9IjEiPjxwcmVzZXQgX05vXz0iMSIgX05hbWVfPSJEZWZhdWx0Ii8+PC9wcmVzZXRzPjxBIF9BY3RpdmVfPSIxIi8+
+PEIgX0FjdGl2ZV89IjAiIF9MaW5rZWRfPSIxIi8+PHVuZG8+PHVpIG9wPSIyIiBwaT0iMCIvPjx1aSBvcD0iMiIgcGk9IjAiLz48dWkgb3A9IjIiIHBpPSIw
+Ii8+PHVpIG9wPSIyIiBwaT0iMCIvPjx1aSBvcD0iMyIgcG49IkRlZmF1bHQiIGFiPSIwIiBwdmwwPSIxMjAuMCIgcHZsMT0iMS4wIiBwdmwyPSIxMC4wIiBw
+dmwzPSIwLjAiIHB2bDQ9IjEwMC4wIiBwdmw1PSI0LjAiIHB2bDY9Ii0xMC4wIiBwdmw3PSIwLjUiIHB2bDg9IjAuMCIgcHZsOT0iMC4wIiBwdmwxMD0iMC4w
+IiBwdmwxMT0iMS4wIiBwdmwxMj0iMi4wIiBwdmwxMz0iMC4wIiBwdmwxND0iMC4wIiBwdmwxNT0iMC4wIiBwdmwxNj0iMy4wIiBwdmwxNz0iMC4wIiBwdmwx
+OD0iMS4wIiBwdmwxOT0iMC4wIi8+PHVpIG9wPSIxIiBwaT0iOCIgbnY9IjAuNzUiLz48dWkgb3A9IjEiIHBpPSIxMCIgbnY9IjAuNTgzMzMzMzEzNDY1MTE4
+NCIvPjx1aSBvcD0iMSIgcGk9IjEwIiBudj0iMC41Ii8+PHVpIG9wPSIxIiBwaT0iMTAiIG52PSIwLjUwMTA2NTU1MjIzNDY0OTciLz48dWkgb3A9IjEiIHBp
+PSI4IiBudj0iMC43NSIvPjx1aSBvcD0iMSIgcGk9IjciIG52PSIwLjI1MDI5OTk5MDE3NzE1NDUiLz48dWkgb3A9IjEiIHBpPSI4IiBudj0iMC40OTg0ODk0
+Mzk0ODc0NTczIi8+PHVpIG9wPSIxIiBwaT0iNSIgbnY9IjAuNjIyNDcxOTI4NTk2NDk2NiIvPjx1aSBvcD0iMSIgcGk9IjUiIG52PSIwLjczOTA5NDk3MjYx
+MDQ3MzYiLz48dWkgb3A9IjEiIHBpPSI2IiBudj0iMC41Ii8+PHVpIG9wPSIxIiBwaT0iNiIgbnY9IjAuMzQ4NjQ3MDI4MjA3Nzc4OSIvPjx1aSBvcD0iMSIg
+cGk9IjgiIG52PSIwLjY2NjI4MzkwNTUwNjEzNCIgYWN0aXZlPSIxIi8+PC91bmRvPjxpbmZvIHZlcnNpb249IjEuMC42Ii8+PHBhcmFtIGluc3RhbmNlPSJU
+RFIgTW9sb3RvayAoMSkiLz48L1REUk1vbG90b2s+AA==
+   </Chunk>
+  </Data>
+ </Plugin>
+
+ <!-- TDR VOS SlickEQ -->
+ <Plugin>
+  <Info>
+   <Type>VST2</Type>
+   <Name>TDR VOS SlickEQ</Name>
+   <Binary>/home/hasegawa/.vst/yabridge/TDR VOS SlickEQ.so</Binary>
+   <UniqueID>1415852336</UniqueID>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0xd</Options>
+
+   <CustomData>
+    <Type>http://kxstudio.sf.net/ns/carla/property</Type>
+    <Key>CarlaSkinIsCompacted</Key>
+    <Value>false</Value>
+   </CustomData>
+
+   <Chunk>
+VkMyIckHAAA8P3htbCB2ZXJzaW9uPSIxLjAiIGVuY29kaW5nPSJVVEYtOCI/PiA8VERSVk9TU2xpY2tFUSBsb3dCYW5kR2FpblBhcmFtPSIyLjUiIGxvd0Jh
+bmRGcmVxUGFyYW09Ijg1IiBsb3dCYW5kU2hhcGVQYXJhbT0iU2hlbGYiIG1pZEJhbmRHYWluUGFyYW09Ii0yLjUiIG1pZEJhbmRGcmVxUGFyYW09IjQwMCIg
+aGlnaEJhbmRHYWluUGFyYW09IjIuMCIgaGlnaEJhbmRGcmVxUGFyYW09IjEwMDAwIiBoaWdoQmFuZFNoYXBlUGFyYW09IkJlbGwiIGVxTW9kZWxQYXJhbT0i
+QnJpdGlzaCIgZXFTYXRQYXJhbT0iT2ZmIiBocEZyZXFQYXJhbT0iT2ZmIiBvdXRTYXRNb2RlbFBhcmFtPSJNZWxsb3ciIG91dFNhdERyaXZlUGFyYW09IjEy
+LjAiIG91dEdhaW5QYXJhbT0iMC4wIiBieXBhc3NQYXJhbT0iT2ZmIiBtb2RlUGFyYW09Ik1vbm8iIGxvd0JhbmRCeXBhc3NQYXJhbT0iT2ZmIiBtaWRCYW5k
+QnlwYXNzUGFyYW09Ik9mZiIgaGlnaEJhbmRCeXBhc3NQYXJhbT0iT2ZmIiBhdXRvR2FpblBhcmFtPSJPbiIgcXVhbGl0eVBhcmFtPSJGdWxsIj48bG9naWNh
+bCBsb3dCYW5kR2FpblBhcmFtPSIyLjUxNTg3OTg2OTQ2MTA2IiBsb3dCYW5kRnJlcVBhcmFtPSI4NS4wIiBsb3dCYW5kU2hhcGVQYXJhbT0iMC4wIiBtaWRC
+YW5kR2FpblBhcmFtPSItMi41NDg0MDMyNjMwOTIwNDEiIG1pZEJhbmRGcmVxUGFyYW09IjQwMC4wIiBoaWdoQmFuZEdhaW5QYXJhbT0iMi4wIiBoaWdoQmFu
+ZEZyZXFQYXJhbT0iMTAwMDAuMCIgaGlnaEJhbmRTaGFwZVBhcmFtPSIxLjAiIGVxTW9kZWxQYXJhbT0iMS4wIiBlcVNhdFBhcmFtPSIwLjAiIGhwRnJlcVBh
+cmFtPSIxMC4wIiBvdXRTYXRNb2RlbFBhcmFtPSIyLjAiIG91dFNhdERyaXZlUGFyYW09IjEyLjAiIG91dEdhaW5QYXJhbT0iMC4wNDkxNDQ1MDY0NTQ0Njc3
+NyIgYnlwYXNzUGFyYW09IjAuMCIgbW9kZVBhcmFtPSIwLjAiIGxvd0JhbmRCeXBhc3NQYXJhbT0iMC4wIiBtaWRCYW5kQnlwYXNzUGFyYW09IjAuMCIgaGln
+aEJhbmRCeXBhc3NQYXJhbT0iMC4wIiBhdXRvR2FpblBhcmFtPSIxLjAiIHF1YWxpdHlQYXJhbT0iMC4wIi8+PHByZXNldHMgYWN0aXZlPSIxIj48cHJlc2V0
+IF9Ob189IjEiIF9OYW1lXz0iRGVmYXVsdCIvPjwvcHJlc2V0cz48QSBfQWN0aXZlXz0iMSIvPjxCIF9BY3RpdmVfPSIwIiBfTGlua2VkXz0iMSIvPjx1bmRv
+Pjx1aSBvcD0iMiIgcGk9IjAiLz48dWkgb3A9IjIiIHBpPSIwIi8+PHVpIG9wPSIyIiBwaT0iMCIvPjx1aSBvcD0iMiIgcGk9IjAiLz48dWkgb3A9IjMiIHBu
+PSJEZWZhdWx0IiBhYj0iMCIgcHZsMD0iMC4wIiBwdmwxPSI4NS4wIiBwdmwyPSIwLjAiIHB2bDM9IjAuMCIgcHZsND0iMjUwMC4wIiBwdmw1PSIwLjAiIHB2
+bDY9IjEwMDAwLjAiIHB2bDc9IjAuMCIgcHZsOD0iMC4wIiBwdmw5PSIwLjAiIHB2bDEwPSIxMC4wIiBwdmwxMT0iMC4wIiBwdmwxMj0iNi4wIiBwdmwxMz0i
+MC4wIiBwdmwxND0iMC4wIiBwdmwxNT0iMS4wIiBwdmwxNj0iMC4wIiBwdmwxNz0iMC4wIiBwdmwxOD0iMC4wIiBwdmwxOT0iMS4wIiBwdmwyMD0iMC4wIi8+
+PHVpIG9wPSIxIiBwaT0iMTQiIG52PSIwLjAwMDYwMDAwMDAyODQ5ODQ3MDgiLz48dWkgb3A9IjEiIHBpPSIxMyIgbnY9IjAuNSIvPjx1aSBvcD0iMSIgcGk9
+IjE0IiBudj0iMS4wIi8+PHVpIG9wPSIxIiBwaT0iMCIgbnY9IjAuNTgzMzMzMzEzNDY1MTE4NCIvPjx1aSBvcD0iMSIgcGk9IjMiIG52PSIwLjM4ODg4ODg5
+NTUxMTYyNzIiLz48dWkgb3A9IjEiIHBpPSI5IiBudj0iMS4wIi8+PHVpIG9wPSIxIiBwaT0iMCIgbnY9IjAuNTU0ODMwNjEwNzUyMTA1NyIvPjx1aSBvcD0i
+MSIgcGk9IjIiIG52PSIxLjAiLz48dWkgb3A9IjEiIHBpPSIwIiBudj0iMC41ODQyNjE5NTM4MzA3MTkiLz48dWkgb3A9IjEiIHBpPSIzIiBudj0iMC40MTUz
+OTMwMjQ2ODI5OTg3IiBhY3RpdmU9IjEiLz48L3VuZG8+PGluZm8gdmVyc2lvbj0iMS4zLjkiLz48cGFyYW0gaW5zdGFuY2U9IlREUiBWT1MgU2xpY2tFUSAo
+MSkiLz48L1REUlZPU1NsaWNrRVE+AA==
+   </Chunk>
+  </Data>
+ </Plugin>
+
+ <!-- U78 Saturator -->
+ <Plugin>
+  <Info>
+   <Type>VST2</Type>
+   <Name>U78 Saturator</Name>
+   <Binary>/home/hasegawa/.vst/yabridge/U78 Saturator.so</Binary>
+   <UniqueID>1735682669</UniqueID>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <Volume>0.999617</Volume>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x5</Options>
+
+   <Parameter>
+    <Index>0</Index>
+    <Name>Bypass</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>1</Index>
+    <Name>Hz</Name>
+    <Value>0.992523908615112</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>2</Index>
+    <Name>Hz</Name>
+    <Value>0.0137141514569521</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>3</Index>
+    <Name>%</Name>
+    <Value>0.370000034570694</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>4</Index>
+    <Name>%</Name>
+    <Value>0.495000034570694</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>5</Index>
+    <Name>dB</Name>
+    <Value>0.514999985694885</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>6</Index>
+    <Name>%</Name>
+    <Value>0.115000016987324</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>7</Index>
+    <Name>dB</Name>
+    <Value>0.625</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>8</Index>
+    <Name>Meter</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>9</Index>
+    <Name>Autovolume</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>10</Index>
+    <Name>Oversampling</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>11</Index>
+    <Name>degree</Name>
+    <Value>0.125348195433617</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>12</Index>
+    <Name>%</Name>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>13</Index>
+    <Name>%</Name>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>14</Index>
+    <Name>%</Name>
+    <Value>1</Value>
+   </Parameter>
+
+   <CurrentProgramIndex>1</CurrentProgramIndex>
+   <CurrentProgramName>U78 Saturator</CurrentProgramName>
+
+   <CustomData>
+    <Type>http://kxstudio.sf.net/ns/carla/property</Type>
+    <Key>CarlaSkinIsCompacted</Key>
+    <Value>false</Value>
+   </CustomData>
+  </Data>
+ </Plugin>
+
+ <!-- LSP Deesser Stereo -->
+ <Plugin>
+  <Info>
+   <Type>LV2</Type>
+   <Name>LSP Deesser Stereo</Name>
+   <URI>http://lsp-plug.in/plugins/lv2/deesser_stereo</URI>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x1</Options>
+
+   <Parameter>
+    <Index>0</Index>
+    <Name>Enabled</Name>
+    <Symbol>enabled</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>1</Index>
+    <Name>Input gain</Name>
+    <Symbol>g_in</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>2</Index>
+    <Name>Output gain</Name>
+    <Symbol>g_out</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>3</Index>
+    <Name>Graph zoom</Name>
+    <Symbol>zoom</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>4</Index>
+    <Name>Stereo split</Name>
+    <Symbol>ssplit</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>5</Index>
+    <Name>Stereo linking</Name>
+    <Symbol>slink</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>10</Index>
+    <Name>Show pre-mix overlay</Name>
+    <Symbol>showpmx</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>11</Index>
+    <Name>Input to Link mix</Name>
+    <Symbol>in2lk</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>12</Index>
+    <Name>Link to Input mix</Name>
+    <Symbol>lk2in</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>13</Index>
+    <Name>Link to Sidechain mix</Name>
+    <Symbol>lk2sc</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>14</Index>
+    <Name>Show sidechain overlay</Name>
+    <Symbol>showsc</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>15</Index>
+    <Name>Sidechain type</Name>
+    <Symbol>sct</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>16</Index>
+    <Name>Sidechain mode</Name>
+    <Symbol>scm</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>17</Index>
+    <Name>Sidechain source</Name>
+    <Symbol>scs</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>18</Index>
+    <Name>Sidechain source L</Name>
+    <Symbol>scsl</Symbol>
+    <Value>2</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>19</Index>
+    <Name>Sidechain source R</Name>
+    <Symbol>scsr</Symbol>
+    <Value>3</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>20</Index>
+    <Name>Sidechain lookahead</Name>
+    <Symbol>sla</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>21</Index>
+    <Name>Sidechain listen</Name>
+    <Symbol>scl</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>22</Index>
+    <Name>Sidechain reactivity</Name>
+    <Symbol>scr</Symbol>
+    <Value>10</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>23</Index>
+    <Name>Sidechain preamp</Name>
+    <Symbol>scp</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>24</Index>
+    <Name>FFT reactivity</Name>
+    <Symbol>react</Symbol>
+    <Value>0.200000002980232</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>25</Index>
+    <Name>Shift gain</Name>
+    <Symbol>shift</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>26</Index>
+    <Name>Enable input FFT analysis Left</Name>
+    <Symbol>ife_l</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>27</Index>
+    <Name>Enable sidechain FFT analysis Left</Name>
+    <Symbol>sfe_l</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>28</Index>
+    <Name>Enable output FFT analysis Left</Name>
+    <Symbol>ofe_l</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>29</Index>
+    <Name>Enable input FFT analysis Right</Name>
+    <Symbol>ife_r</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>30</Index>
+    <Name>Enable sidechain FFT analysis Right</Name>
+    <Symbol>sfe_r</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>31</Index>
+    <Name>Enable output FFT analysis Right</Name>
+    <Symbol>ofe_r</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>32</Index>
+    <Name>Enable frequency split</Name>
+    <Symbol>xsplit</Symbol>
+    <Value>2</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>33</Index>
+    <Name>Frequency split slope</Name>
+    <Symbol>slope</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>34</Index>
+    <Name>Split frequency</Name>
+    <Symbol>split</Symbol>
+    <Value>4000</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>35</Index>
+    <Name>Crossover band linkage</Name>
+    <Symbol>xlink</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>36</Index>
+    <Name>High-pass filter slope</Name>
+    <Symbol>hpf_s</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>37</Index>
+    <Name>High-pass filter frequency</Name>
+    <Symbol>hpf_f</Symbol>
+    <Value>4000</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>38</Index>
+    <Name>High-pass filter qualifty factor</Name>
+    <Symbol>hpf_q</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>39</Index>
+    <Name>Low-pass filter slope</Name>
+    <Symbol>lpf_s</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>40</Index>
+    <Name>Low-pass filter frequency</Name>
+    <Symbol>lpf_f</Symbol>
+    <Value>10000</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>41</Index>
+    <Name>Low-pass filter qualifty factor</Name>
+    <Symbol>lpf_q</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>42</Index>
+    <Name>Peak filter 1 on</Name>
+    <Symbol>pk1_on</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>43</Index>
+    <Name>Peak filter 1 frequency</Name>
+    <Symbol>pk1_f</Symbol>
+    <Value>7000</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>44</Index>
+    <Name>Peak filter 1 gain</Name>
+    <Symbol>pk1_g</Symbol>
+    <Value>1.99526238441467</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>45</Index>
+    <Name>Peak filter 1 qualifty factor</Name>
+    <Symbol>pk1_q</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>46</Index>
+    <Name>Peak filter 2 on</Name>
+    <Symbol>pk2_on</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>47</Index>
+    <Name>Peak filter 2 frequency</Name>
+    <Symbol>pk2_f</Symbol>
+    <Value>6000</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>48</Index>
+    <Name>Peak filter 2 gain</Name>
+    <Symbol>pk2_g</Symbol>
+    <Value>1.41253995895386</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>49</Index>
+    <Name>Peak filter 2 qualifty factor</Name>
+    <Symbol>pk2_q</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>50</Index>
+    <Name>Threshold</Name>
+    <Symbol>thresh</Symbol>
+    <Value>0.0208766013383865</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>51</Index>
+    <Name>Attack time</Name>
+    <Symbol>att</Symbol>
+    <Value>2</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>52</Index>
+    <Name>Release time</Name>
+    <Symbol>rel</Symbol>
+    <Value>80</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>53</Index>
+    <Name>Hold time</Name>
+    <Symbol>hold</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>54</Index>
+    <Name>Ratio</Name>
+    <Symbol>ratio</Symbol>
+    <Value>3</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>55</Index>
+    <Name>Knee</Name>
+    <Symbol>knee</Symbol>
+    <Value>0.501179993152618</Value>
+   </Parameter>
+
+   <CustomData>
+    <Type>http://kxstudio.sf.net/ns/carla/property</Type>
+    <Key>CarlaSkinIsCompacted</Key>
+    <Value>false</Value>
+   </CustomData>
+
+   <CustomData>
+    <Type>http://lv2plug.in/ns/ext/atom#String</Type>
+    <Key>http://lsp-plug.in/plugins/lv2/deesser_stereo/ports#link</Key>
+    <Value></Value>
+   </CustomData>
+
+   <CustomData>
+    <Type>http://lv2plug.in/ns/ext/atom#Object</Type>
+    <Key>http://lsp-plug.in/plugins/lv2/deesser_stereo/preset_state</Key>
+    <Value>AAAAAFUAAABWAAAAAAAAAAEAAAARAAAAAAAAAAAAAABXAAAAAAAAAAQAAAAHAAAAAAAAAAAAAABYAAAAAAAAAAQAAAAHAAAAAAAAAAAAAAA=</Value>
+   </CustomData>
+  </Data>
+ </Plugin>
+
+ <!-- Audio Gain (Stereo) -->
+ <Plugin>
+  <Info>
+   <Type>INTERNAL</Type>
+   <Name>Audio Gain (Stereo)</Name>
+   <Label>audiogain_s</Label>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x0</Options>
+
+   <Parameter>
+    <Index>0</Index>
+    <Name>Gain</Name>
+    <Value>1.87254905700684</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>1</Index>
+    <Name>Apply Left</Name>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>2</Index>
+    <Name>Apply Right</Name>
+    <Value>1</Value>
+   </Parameter>
+
+   <CustomData>
+    <Type>http://kxstudio.sf.net/ns/carla/property</Type>
+    <Key>CarlaSkinIsCompacted</Key>
+    <Value>false</Value>
+   </CustomData>
+  </Data>
+ </Plugin>
+
+ <!-- LSP Limiter Stereo -->
+ <Plugin>
+  <Info>
+   <Type>LV2</Type>
+   <Name>LSP Limiter Stereo</Name>
+   <URI>http://lsp-plug.in/plugins/lv2/limiter_stereo</URI>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x1</Options>
+
+   <Parameter>
+    <Index>0</Index>
+    <Name>Show pre-mix overlay</Name>
+    <Symbol>showpmx</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>1</Index>
+    <Name>Input to Link mix</Name>
+    <Symbol>in2lk</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>2</Index>
+    <Name>Link to Input mix</Name>
+    <Symbol>lk2in</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>3</Index>
+    <Name>Link to Sidechain mix</Name>
+    <Symbol>lk2sc</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>4</Index>
+    <Name>Enabled</Name>
+    <Symbol>enabled</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>5</Index>
+    <Name>Input gain</Name>
+    <Symbol>g_in</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>6</Index>
+    <Name>Output gain</Name>
+    <Symbol>g_out</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>7</Index>
+    <Name>Sidechain preamp</Name>
+    <Symbol>scp</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>8</Index>
+    <Name>Automatic level regulation</Name>
+    <Symbol>alr</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>9</Index>
+    <Name>Automatic level regulation attack time</Name>
+    <Symbol>alr_at</Symbol>
+    <Value>5</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>10</Index>
+    <Name>Automatic level regulation release time</Name>
+    <Symbol>alr_rt</Symbol>
+    <Value>50</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>11</Index>
+    <Name>Operating mode</Name>
+    <Symbol>mode</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>12</Index>
+    <Name>Threshold</Name>
+    <Symbol>th</Symbol>
+    <Value>0.891250908374786</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>13</Index>
+    <Name>Knee level</Name>
+    <Symbol>knee</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>14</Index>
+    <Name>Gain boost</Name>
+    <Symbol>boost</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>15</Index>
+    <Name>Lookahead</Name>
+    <Symbol>lk</Symbol>
+    <Value>5</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>16</Index>
+    <Name>Attack time</Name>
+    <Symbol>at</Symbol>
+    <Value>2</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>17</Index>
+    <Name>Release time</Name>
+    <Symbol>rt</Symbol>
+    <Value>10</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>18</Index>
+    <Name>Oversampling</Name>
+    <Symbol>ovs</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>19</Index>
+    <Name>Dithering</Name>
+    <Symbol>dith</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>20</Index>
+    <Name>Pause graph analysis</Name>
+    <Symbol>pause</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>21</Index>
+    <Name>Clear graph analysis</Name>
+    <Symbol>clear</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>22</Index>
+    <Name>Sidechain type</Name>
+    <Symbol>extsc</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>23</Index>
+    <Name>Stereo linking</Name>
+    <Symbol>slink</Symbol>
+    <Value>100</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>24</Index>
+    <Name>Input graph visibility Left</Name>
+    <Symbol>igv_l</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>25</Index>
+    <Name>Output graph visibility Left</Name>
+    <Symbol>ogv_l</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>26</Index>
+    <Name>Sidechain graph visibility Left</Name>
+    <Symbol>scgv_l</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>27</Index>
+    <Name>Gain graph visibility Left</Name>
+    <Symbol>grgv_l</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>32</Index>
+    <Name>Input graph visibility Right</Name>
+    <Symbol>igv_r</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>33</Index>
+    <Name>Output graph visibility Right</Name>
+    <Symbol>ogv_r</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>34</Index>
+    <Name>Sidechain graph visibility Right</Name>
+    <Symbol>scgv_r</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>35</Index>
+    <Name>Gain graph visibility Right</Name>
+    <Symbol>grgv_r</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>40</Index>
+    <Name>Knee smooth</Name>
+    <Symbol>smooth</Symbol>
+    <Value>-5</Value>
+   </Parameter>
+
+   <CustomData>
+    <Type>http://kxstudio.sf.net/ns/carla/property</Type>
+    <Key>CarlaSkinIsCompacted</Key>
+    <Value>false</Value>
+   </CustomData>
+
+   <CustomData>
+    <Type>http://lv2plug.in/ns/ext/atom#String</Type>
+    <Key>http://lsp-plug.in/plugins/lv2/limiter_stereo/ports#link</Key>
+    <Value></Value>
+   </CustomData>
+
+   <CustomData>
+    <Type>http://lv2plug.in/ns/ext/atom#Object</Type>
+    <Key>http://lsp-plug.in/plugins/lv2/limiter_stereo/preset_state</Key>
+    <Value>AAAAAFUAAABWAAAAAAAAAAEAAAARAAAAAAAAAAAAAABXAAAAAAAAAAQAAAAHAAAAAAAAAAAAAABYAAAAAAAAAAQAAAAHAAAAAAAAAAAAAAA=</Value>
+   </CustomData>
+  </Data>
+ </Plugin>
+
+ <ExternalPatchbay>
+  <Connection>
+   <Source>E2x2 Analog Surround 2.1:capture_FL</Source>
+   <Target>Carla:audio-in1</Target>
+  </Connection>
+  <Connection>
+   <Source>E2x2 Analog Surround 2.1:capture_FR</Source>
+   <Target>Carla:audio-in2</Target>
+  </Connection>
+  <Connection>
+   <Source>Studio Mic:capture_FL</Source>
+   <Target>WEBRTC VoiceEngine:input_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>Studio Mic:capture_FR</Source>
+   <Target>WEBRTC VoiceEngine:input_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>Carla:audio-out1</Source>
+   <Target>Studio Mic Input:playback_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>Carla:audio-out2</Source>
+   <Target>Studio Mic Input:playback_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>WEBRTC VoiceEngine:output_FL</Source>
+   <Target>Easy Effects Sink:playback_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>WEBRTC VoiceEngine:output_FR</Source>
+   <Target>Easy Effects Sink:playback_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>Output Level Meter:output_FL-297</Source>
+   <Target>E2x2 Analog Surround 2.1:playback_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>Output Level Meter:output_FR-298</Source>
+   <Target>E2x2 Analog Surround 2.1:playback_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>Equalizer (Speakers):output_FL</Source>
+   <Target>Spectrum:input_FL-300</Target>
+  </Connection>
+  <Connection>
+   <Source>Equalizer (Speakers):output_FR</Source>
+   <Target>Spectrum:input_FR-301</Target>
+  </Connection>
+  <Connection>
+   <Source>Spectrum:output_FL-302</Source>
+   <Target>Output Level Meter:input_FL-295</Target>
+  </Connection>
+  <Connection>
+   <Source>Spectrum:output_FR-303</Source>
+   <Target>Output Level Meter:input_FR-296</Target>
+  </Connection>
+  <Connection>
+   <Source>Easy Effects Sink:monitor_FL</Source>
+   <Target>Equalizer (Speakers):input_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>Easy Effects Sink:monitor_FR</Source>
+   <Target>Equalizer (Speakers):input_FR</Target>
+  </Connection>
+ </ExternalPatchbay>
+</CARLA-PROJECT>

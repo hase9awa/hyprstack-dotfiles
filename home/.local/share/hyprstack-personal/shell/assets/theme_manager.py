@@ -1,0 +1,1 @@
+../../../hyprstack/shell/assets/theme_manager.py

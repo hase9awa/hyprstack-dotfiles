@@ -1,0 +1,12 @@
+[Unit]
+Description=Stock NVIDIA performance for the Hyprstack desktop
+After=hyprstack-session.service
+PartOf=hyprstack-session.service
+BindsTo=hyprstack-session.service
+ConditionEnvironment=HYPRLAND_INSTANCE_SIGNATURE
+
+[Service]
+Type=exec
+ExecStart=/usr/bin/python3 %h/.local/share/hyprstack/shell/assets/gpu_performance.py
+Restart=no
+TimeoutStopSec=20

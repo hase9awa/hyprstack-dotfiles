@@ -1,0 +1,220 @@
+{
+    "appearance": {
+        "scale": 1,
+        "transparency": {
+            "base": 0.9779005524861879,
+            "enabled": false
+        }
+    },
+    "background": {
+        "wallpaperEnabled": true
+    },
+    "bar": {
+        "activeWindow": {
+            "compact": false,
+            "inverted": false,
+            "showOnHover": true
+        },
+        "clock": {
+            "background": false,
+            "showDate": true,
+            "showIcon": true,
+            "showSeconds": true
+        },
+        "entries": [
+            {
+                "enabled": true,
+                "id": "logo"
+            },
+            {
+                "enabled": true,
+                "id": "workspaces"
+            },
+            {
+                "enabled": true,
+                "id": "spacer"
+            },
+            {
+                "enabled": true,
+                "id": "activeWindow"
+            },
+            {
+                "enabled": true,
+                "id": "spacer"
+            },
+            {
+                "enabled": true,
+                "id": "tray"
+            },
+            {
+                "enabled": true,
+                "id": "clock"
+            },
+            {
+                "enabled": true,
+                "id": "statusIcons"
+            },
+            {
+                "enabled": true,
+                "id": "power"
+            }
+        ],
+        "popouts": {
+            "tray": true
+        },
+        "scrollActions": {
+            "workspaces": true
+        },
+        "showNotifications": true,
+        "showTasks": true,
+        "statusIcons": [
+            {
+                "enabled": true,
+                "id": "kbLayout"
+            },
+            {
+                "enabled": false,
+                "id": "lockStatus"
+            },
+            {
+                "enabled": true,
+                "id": "audio"
+            },
+            {
+                "enabled": true,
+                "id": "microphone"
+            },
+            {
+                "enabled": true,
+                "id": "network"
+            },
+            {
+                "enabled": true,
+                "id": "bluetooth"
+            },
+            {
+                "enabled": false,
+                "id": "battery"
+            }
+        ],
+        "tray": {
+            "background": true,
+            "compact": false,
+            "recolour": false
+        },
+        "workspaces": {
+            "activeIndicator": true,
+            "activeTrail": true,
+            "displayType": "Shapes",
+            "maxWindowIcons": 5,
+            "occupiedBg": false,
+            "perMonitor": true,
+            "showUnoccupied": false,
+            "showWindows": true,
+            "showWindowsOnSpecialWorkspaces": true,
+            "shown": 10,
+            "specialWorkspaceIcons": [
+                {
+                    "flags": "",
+                    "icon": "star",
+                    "name": "special",
+                    "regex": ""
+                },
+                {
+                    "flags": "",
+                    "icon": "music_cast",
+                    "name": "music",
+                    "regex": ""
+                },
+                {
+                    "flags": "",
+                    "icon": "checklist",
+                    "name": "todo",
+                    "regex": ""
+                },
+                {
+                    "flags": "",
+                    "icon": "monitor_heart",
+                    "name": "sysmon",
+                    "regex": ""
+                }
+            ]
+        }
+    },
+    "dashboard": {
+        "showClockSeconds": true,
+        "showWeather": true
+    },
+    "general": {
+        "apps": {
+            "terminal": [
+                "kitty"
+            ]
+        },
+        "idle": {
+            "inhibitWhenAudio": true,
+            "inhibitWhenCharging": false,
+            "lockBeforeSleep": false,
+            "timeouts": [
+                {
+                    "enabled": true,
+                    "idleAction": [
+                        "/home/hasegawa/.local/bin/hyprstack-dim",
+                        "dim"
+                    ],
+                    "inhibitWhenAudio": false,
+                    "inhibitWhenCharging": false,
+                    "respectInhibitors": true,
+                    "returnAction": [
+                        "/home/hasegawa/.local/bin/hyprstack-dim",
+                        "restore"
+                    ],
+                    "timeout": 300
+                }
+            ]
+        },
+        "language": "ru_RU"
+    },
+    "services": {
+        "dataUnits": "Decimal",
+        "gpuType": "Nvidia",
+        "smartScheme": false,
+        "weatherEnabled": true,
+        "weatherLocation": "56.85225,53.19862",
+        "weatherLocationLabel": "Ижевск, Удмуртия, Россия",
+        "weatherLocationName": "Ижевск"
+    },
+    "utilities": {
+        "enabled": true,
+        "quickToggles": [
+            {
+                "enabled": true,
+                "id": "wifi"
+            },
+            {
+                "enabled": true,
+                "id": "bluetooth"
+            },
+            {
+                "enabled": true,
+                "id": "mic"
+            },
+            {
+                "enabled": true,
+                "id": "settings"
+            },
+            {
+                "enabled": true,
+                "id": "gameMode"
+            },
+            {
+                "enabled": true,
+                "id": "dnd"
+            },
+            {
+                "enabled": false,
+                "id": "vpn"
+            }
+        ]
+    }
+}

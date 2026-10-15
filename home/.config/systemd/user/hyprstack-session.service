@@ -1,0 +1,17 @@
+[Unit]
+Description=Hyprstack desktop session
+PartOf=graphical-session.target
+ConditionEnvironment=HYPRLAND_INSTANCE_SIGNATURE
+StartLimitIntervalSec=60
+StartLimitBurst=3
+
+[Service]
+Type=simple
+ExecStart=%h/.local/bin/hyprstack-session-runner
+Restart=on-failure
+RestartSec=3
+TimeoutStopSec=10
+# The runner stops its own process groups. Desktop applications launched by the
+# shell share this cgroup until they move to an application scope and must live
+# independently of shell updates.
+KillMode=process

@@ -1,0 +1,11 @@
+[Unit]
+Description=Bounded Hyprstack startup freeze trace
+After=hyprstack-session.service
+PartOf=hyprstack-session.service
+ConditionEnvironment=HYPRLAND_INSTANCE_SIGNATURE
+
+[Service]
+Type=exec
+ExecStart=/usr/bin/python3 %h/.local/share/hyprstack/shell/assets/startup_trace.py --seconds 180
+Restart=no
+TimeoutStopSec=2

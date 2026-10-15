@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=AyuGram
+Comment=AyuGram Desktop
+Exec=/home/hasegawa/.local/bin/AyuGram
+Icon=ayugram
+Terminal=false
+Categories=Network;InstantMessaging;
+StartupNotify=true

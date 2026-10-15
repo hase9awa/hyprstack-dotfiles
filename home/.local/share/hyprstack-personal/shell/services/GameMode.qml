@@ -1,0 +1,1 @@
+../../../hyprstack/shell/services/GameMode.qml

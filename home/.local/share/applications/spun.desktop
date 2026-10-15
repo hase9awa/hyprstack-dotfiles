@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Spun
+Comment=Music player for local files, Cider, YouTube Music and Jellyfin.
+Exec="/home/hasegawa/Spun/scripts/run.sh" %F
+Icon=/home/hasegawa/Spun/assets/spun-icon.png
+Terminal=false
+Categories=AudioVideo;Audio;Player;
+MimeType=audio/mpeg;audio/flac;audio/ogg;audio/x-wav;audio/mp4;
+StartupNotify=true
+StartupWMClass=spun

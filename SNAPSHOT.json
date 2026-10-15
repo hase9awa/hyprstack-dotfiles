@@ -1,0 +1,1796 @@
+{
+  "schema": 1,
+  "created_utc": "2026-10-15T09:11:07.897914+00:00",
+  "owner": "hase9awa",
+  "source_user": "hasegawa",
+  "base_repository": "https://github.com/hase9awa/hyprstack-shell",
+  "base_commit": "fa5a94dbe388b3f20ac00f7e4329bc31eadcddc1",
+  "hardware": {
+    "cpu": "AMD Ryzen 5 5600X",
+    "gpu": "NVIDIA GeForce RTX 3060 Ti",
+    "driver": "615.78.08",
+    "main_output": "P275MR+ / 2560x1440@200 / HDR / 350-nit SDR white",
+    "secondary_output": "BenQ GW2406Z / 1920x1080@60 / portrait"
+  },
+  "files": [
+    {
+      "path": "home/.config/hypr/display-tuning.lua",
+      "source": ".config/hypr/display-tuning.lua",
+      "type": "file",
+      "bytes": 1155,
+      "sha256": "6c7a1ec72683896c3791f54a98b430a9eb15564778a1df098f7924a8a536f5b8"
+    },
+    {
+      "path": "home/.config/hypr/hyprland/animations.lua",
+      "source": ".config/hypr/hyprland/animations.lua",
+      "type": "file",
+      "bytes": 2253,
+      "sha256": "604ccbe36a6992ab1d58827060b343b5fa09a26154cc23f097c43c89d083de69"
+    },
+    {
+      "path": "home/.config/hypr/hyprland/decoration.lua",
+      "source": ".config/hypr/hyprland/decoration.lua",
+      "type": "file",
+      "bytes": 924,
+      "sha256": "c99171984a16c5d6ef8f0caae2b037140189e60f4d7a11c1be29f098bcb04c1e"
+    },
+    {
+      "path": "home/.config/hypr/hyprland/env.lua",
+      "source": ".config/hypr/hyprland/env.lua",
+      "type": "file",
+      "bytes": 601,
+      "sha256": "58e5df7b642209e8d74bb0aa0927e0b71d6a7bf2586d9f4327dcbc3e24f8f608"
+    },
+    {
+      "path": "home/.config/hypr/hyprland/execs.lua",
+      "source": ".config/hypr/hyprland/execs.lua",
+      "type": "file",
+      "bytes": 1108,
+      "sha256": "d9c12e2bda2eeb80663eb6f793bad1bacd7a7d31e885174ebf80b40e59cd132f"
+    },
+    {
+      "path": "home/.config/hypr/hyprland/general.lua",
+      "source": ".config/hypr/hyprland/general.lua",
+      "type": "file",
+      "bytes": 943,
+      "sha256": "8df3a245678b10e6087f55ea290d6030b1e1981b0eef075a3611a6d4e76af6c4"
+    },
+    {
+      "path": "home/.config/hypr/hyprland/gestures.lua",
+      "source": ".config/hypr/hyprland/gestures.lua",
+      "type": "file",
+      "bytes": 940,
+      "sha256": "c62c60854456d84529fcceb5ac9e687f0368993b84926133e144233a42a1783a"
+    },
+    {
+      "path": "home/.config/hypr/hyprland/group.lua",
+      "source": ".config/hypr/hyprland/group.lua",
+      "type": "file",
+      "bytes": 1277,
+      "sha256": "c3db452173a2437ea0d17d84f719cf89775b4df225006d3838801925718ea261"
+    },
+    {
+      "path": "home/.config/hypr/hyprland/input.lua",
+      "source": ".config/hypr/hyprland/input.lua",
+      "type": "file",
+      "bytes": 556,
+      "sha256": "3dccdddc88d57fe1e9391b7e9553001922fc59c2d022b7b6aa5e35fa2f685d7b"
+    },
+    {
+      "path": "home/.config/hypr/hyprland/keybinds.lua",
+      "source": ".config/hypr/hyprland/keybinds.lua",
+      "type": "file",
+      "bytes": 12739,
+      "sha256": "7d4925843ecf50cc4d9baa290f1af46613e76a3488c8262f8916366674375810"
+    },
+    {
+      "path": "home/.config/hypr/hyprland/misc.lua",
+      "source": ".config/hypr/hyprland/misc.lua",
+      "type": "file",
+      "bytes": 986,
+      "sha256": "2d0b694867cf13da9a157c5f5cfd583586254ccd68d19102b9ba8e4892c63169"
+    },
+    {
+      "path": "home/.config/hypr/hyprland/rules.lua",
+      "source": ".config/hypr/hyprland/rules.lua",
+      "type": "file",
+      "bytes": 7600,
+      "sha256": "ecef5ce0729b0f4a2db09f81082b88a84abc458d0a1026c350f31ec06c8b002a"
+    },
+    {
+      "path": "home/.config/hypr/hyprland.lua",
+      "source": ".config/hypr/hyprland.lua",
+      "type": "file",
+      "bytes": 1828,
+      "sha256": "d3d386916c6a69e83081420e585ddfed141d20de4a012e0f87fba2ba993e3676"
+    },
+    {
+      "path": "home/.config/hypr/monitors.lua",
+      "source": ".config/hypr/monitors.lua",
+      "type": "file",
+      "bytes": 225,
+      "sha256": "8641743d71992dfa7fcb730cd4ff9ff65d5fffc410f9ba8531f156ddabf70f89"
+    },
+    {
+      "path": "home/.config/hypr/scheme/current.lua",
+      "source": ".config/hypr/scheme/current.lua",
+      "type": "file",
+      "bytes": 4463,
+      "sha256": "6faca3b78d6100cacfa1f2acc6b12e0cfe2e8a640d14b3c1b8b85af2089d4270"
+    },
+    {
+      "path": "home/.config/hypr/scheme/default.lua",
+      "source": ".config/hypr/scheme/default.lua",
+      "type": "file",
+      "bytes": 4811,
+      "sha256": "7bb389e3594fde54ce78f1f503710478493c6b07d0723229e5a2e2c961a750e1"
+    },
+    {
+      "path": "home/.config/hypr/utils/functions.lua",
+      "source": ".config/hypr/utils/functions.lua",
+      "type": "file",
+      "bytes": 10367,
+      "sha256": "317940ce4679d1246a9fcfe7cc1496512e0c791d2ea6e456ef6e4e7760273776"
+    },
+    {
+      "path": "home/.config/hypr/utils/json.lua",
+      "source": ".config/hypr/utils/json.lua",
+      "type": "file",
+      "bytes": 9638,
+      "sha256": "0eaccda57fabc0330736de25f45cf589821a42b5e0fe02e4e3125f7dc0bf2b7e"
+    },
+    {
+      "path": "home/.config/hypr/variables.lua",
+      "source": ".config/hypr/variables.lua",
+      "type": "file",
+      "bytes": 6301,
+      "sha256": "416425251157b671074473cf113ee10425ce2c5d183746fc5d770c820affa5f1"
+    },
+    {
+      "path": "home/.config/hyprstack/brightness-backends.json",
+      "source": ".config/hyprstack/brightness-backends.json",
+      "type": "file",
+      "bytes": 107,
+      "sha256": "020ed5a1a16063d7cd3af6be75ee139afb7255f4b812db8ac7b3739e6eff9c74"
+    },
+    {
+      "path": "home/.config/hyprstack/brightness.json",
+      "source": ".config/hyprstack/brightness.json",
+      "type": "file",
+      "bytes": 153,
+      "sha256": "f76e8ebcc55722e6a155a6ba72ec604bea1cd94583fd515f1e7b761cbc90e4ed"
+    },
+    {
+      "path": "home/.config/hyprstack/cli.json",
+      "source": ".config/hyprstack/cli.json",
+      "type": "file",
+      "bytes": 384,
+      "sha256": "c594fbc5008285bf91d9a8cfe170ddb1793d207e4cdec8b8a1fe019da8750681"
+    },
+    {
+      "path": "home/.config/hyprstack/effects.json",
+      "source": ".config/hyprstack/effects.json",
+      "type": "file",
+      "bytes": 103,
+      "sha256": "5e7d221b45996588102c67222425e25b11d24621f2badd2e296331d7fb8417d6"
+    },
+    {
+      "path": "home/.config/hyprstack/hypr-user.lua",
+      "source": ".config/hyprstack/hypr-user.lua",
+      "type": "file",
+      "bytes": 417,
+      "sha256": "cd8c9741e1d1a4fbcbbac6f08471473868443296b76ba28ca52fa8202f6556e6"
+    },
+    {
+      "path": "home/.config/hyprstack/hypr-vars.lua",
+      "source": ".config/hyprstack/hypr-vars.lua",
+      "type": "file",
+      "bytes": 390,
+      "sha256": "45076883a43a0cd32be617a3009156b63a4156655ad35b156d85c77617d9c563"
+    },
+    {
+      "path": "home/.config/hyprstack/layouts.json",
+      "source": ".config/hyprstack/layouts.json",
+      "type": "file",
+      "bytes": 21,
+      "sha256": "a05764f5d1853d6f073123c2acc499c13c63f086ba67cc37ed6663e1a5038de5"
+    },
+    {
+      "path": "home/.config/hyprstack/local.lua",
+      "source": ".config/hyprstack/local.lua",
+      "type": "file",
+      "bytes": 579,
+      "sha256": "efb93708b6ba1731040dd4d7a08b478cefdbf4f4ace48f74eeafda205bd46878"
+    },
+    {
+      "path": "home/.config/hyprstack/monitors/DP-1/shell.json",
+      "source": ".config/hyprstack/monitors/DP-1/shell.json",
+      "type": "file",
+      "bytes": 4,
+      "sha256": "d914176fd50bd7f565700006a31aa97b79d3ad17cee20c8e5ff2061d5cb74817"
+    },
+    {
+      "path": "home/.config/hyprstack/monitors/HDMI-A-1/shell.json",
+      "source": ".config/hyprstack/monitors/HDMI-A-1/shell.json",
+      "type": "file",
+      "bytes": 901,
+      "sha256": "2e2b03871a56286a461ff257f5b738f83914c50c1203d30230ebe3777eae4a6f"
+    },
+    {
+      "path": "home/.config/hyprstack/monitors/HDMI-A-2/shell.json",
+      "source": ".config/hyprstack/monitors/HDMI-A-2/shell.json",
+      "type": "file",
+      "bytes": 4,
+      "sha256": "d914176fd50bd7f565700006a31aa97b79d3ad17cee20c8e5ff2061d5cb74817"
+    },
+    {
+      "path": "home/.config/hyprstack/monitors.lua",
+      "source": ".config/hyprstack/monitors.lua",
+      "type": "file",
+      "bytes": 732,
+      "sha256": "8c73351c0249e56c7f561239eebcf7fbd396d0e49c436c32990e915c75088700"
+    },
+    {
+      "path": "home/.config/hyprstack/shell.json",
+      "source": ".config/hyprstack/shell.json",
+      "type": "file",
+      "bytes": 5614,
+      "sha256": "7725b5fe9d7e7be75ad2309a01e5f72bff44ffd80c028473a63e97ea0e8b86ab"
+    },
+    {
+      "path": "home/.config/hyprstack/taskbar.json",
+      "source": ".config/hyprstack/taskbar.json",
+      "type": "file",
+      "bytes": 101,
+      "sha256": "ca7753646248005581864faf973dab7ccdc898cae2c1370e0931b746f07746c1"
+    },
+    {
+      "path": "home/.config/hyprstack/tiling.json",
+      "source": ".config/hyprstack/tiling.json",
+      "type": "file",
+      "bytes": 215,
+      "sha256": "65d161e57cba19b2ef3fb7eeeb925ee5d7aabc4e71c0ec287e2d63ef5a20a461"
+    },
+    {
+      "path": "home/.config/hyprstack/titlebars.json",
+      "source": ".config/hyprstack/titlebars.json",
+      "type": "file",
+      "bytes": 79,
+      "sha256": "2ff9b0b54f802630c340a151aee62552ea4f78bfb85289274721aa6b63da5588",
+      "source_sha256": "5eb2796520373d298f02c9beee14a5cc2014771dbefa18984365d6620bc9d02e"
+    },
+    {
+      "path": "home/.config/hyprstack/workspace-icons.json",
+      "source": ".config/hyprstack/workspace-icons.json",
+      "type": "file",
+      "bytes": 127,
+      "sha256": "a78d662c36528b512531a3f0e9f39558796efbe0a2cf375cd770cd1c62944805"
+    },
+    {
+      "path": "home/.config/hyprstack/workspaces.json",
+      "source": ".config/hyprstack/workspaces.json",
+      "type": "file",
+      "bytes": 106,
+      "sha256": "afa584afb40207855c3531d494b66ad5729e04dd279bc21e68b69458c2481651"
+    },
+    {
+      "path": "home/.config/hyprmoncfg/profiles/profile-20260811-222057.conf",
+      "source": ".config/hyprmoncfg/profiles/profile-20260811-222057.conf",
+      "type": "file",
+      "bytes": 351,
+      "sha256": "f5520e2a3ee5d10a5c60446eb7b56c37bc38a5ba7bc798d724aa172b41feef88"
+    },
+    {
+      "path": "home/.config/hyprmoncfg/profiles/profile-20260811-222057.json",
+      "source": ".config/hyprmoncfg/profiles/profile-20260811-222057.json",
+      "type": "file",
+      "bytes": 2412,
+      "sha256": "cd09dc9f04cd6484c1dd61a987704f4b1b01be9ba952ea2213dfbf05281ab148"
+    },
+    {
+      "path": "home/.config/hyprmoncfg/profiles/profile-20260811-222057.lua",
+      "source": ".config/hyprmoncfg/profiles/profile-20260811-222057.lua",
+      "type": "file",
+      "bytes": 380,
+      "sha256": "e80bda3c4455626f46dd7dbde76134fe1163505871c14ee8196bbce999cc8c6e"
+    },
+    {
+      "path": "home/.config/kitty/current-theme.conf",
+      "source": ".config/kitty/current-theme.conf",
+      "type": "file",
+      "bytes": 602,
+      "sha256": "b1ca26e41386f86fa070ddeaba00cbf17a31494dcbbac81e5fe3ef789aea50bb"
+    },
+    {
+      "path": "home/.config/kitty/kitty.conf",
+      "source": ".config/kitty/kitty.conf",
+      "type": "file",
+      "bytes": 356,
+      "sha256": "10151a2a43256a64e77ec040d148dc880a7b8dba7b306212c6195a8b80a2da96"
+    },
+    {
+      "path": "home/.config/kitty/themes/noctalia.conf",
+      "source": ".config/kitty/themes/noctalia.conf",
+      "type": "file",
+      "bytes": 602,
+      "sha256": "b1ca26e41386f86fa070ddeaba00cbf17a31494dcbbac81e5fe3ef789aea50bb"
+    },
+    {
+      "path": "home/.config/nvim/.neoconf.json",
+      "source": ".config/nvim/.neoconf.json",
+      "type": "file",
+      "bytes": 183,
+      "sha256": "1819a5b64b71521f214b374bdb3b4dd7531a2b91b881c0803e0029811da7f3e4"
+    },
+    {
+      "path": "home/.config/nvim/LICENSE",
+      "source": ".config/nvim/LICENSE",
+      "type": "file",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "home/.config/nvim/README.md",
+      "source": ".config/nvim/README.md",
+      "type": "file",
+      "bytes": 171,
+      "sha256": "9969960a98455417b5f3781772f01528a64bb450e5f9db57734713ae920bd84a"
+    },
+    {
+      "path": "home/.config/nvim/autocmds.lua",
+      "source": ".config/nvim/autocmds.lua",
+      "type": "file",
+      "bytes": 671,
+      "sha256": "ae9f2312547be13aa7b2f3adebd6f936c444e7da1195483eb6878e6067f99855"
+    },
+    {
+      "path": "home/.config/nvim/init.lua",
+      "source": ".config/nvim/init.lua",
+      "type": "file",
+      "bytes": 72,
+      "sha256": "3b2d6e9976a515b7c8df08ed7c7f61a5751e9c08a6ff5579d621b87312c9e2c6"
+    },
+    {
+      "path": "home/.config/nvim/keymaps.lua",
+      "source": ".config/nvim/keymaps.lua",
+      "type": "file",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "home/.config/nvim/lazy-lock.json",
+      "source": ".config/nvim/lazy-lock.json",
+      "type": "file",
+      "bytes": 3341,
+      "sha256": "b5186b9b45cfa952e387bb5072957f2c2bad4b3b37e953aba0fd0c802f08eb26"
+    },
+    {
+      "path": "home/.config/nvim/lazy.lua",
+      "source": ".config/nvim/lazy.lua",
+      "type": "file",
+      "bytes": 1859,
+      "sha256": "2953dca2a680621969dfa2d6515e7535a72914e15e2602cfebec4f91188c758a"
+    },
+    {
+      "path": "home/.config/nvim/lazyvim.json",
+      "source": ".config/nvim/lazyvim.json",
+      "type": "file",
+      "bytes": 102,
+      "sha256": "c5e6e47a04e9afbf60e324cdbc6728357a63ef1eb10b68eb46539e57c02eb56b"
+    },
+    {
+      "path": "home/.config/nvim/lua/config/autocmds.lua",
+      "source": ".config/nvim/lua/config/autocmds.lua",
+      "type": "file",
+      "bytes": 424,
+      "sha256": "ccb2b3a99fe03698bdacaf41b98a48126c70fa38eaa1970e14e7309c876a9635"
+    },
+    {
+      "path": "home/.config/nvim/lua/config/keymaps.lua",
+      "source": ".config/nvim/lua/config/keymaps.lua",
+      "type": "file",
+      "bytes": 209,
+      "sha256": "660a7d9a603a1b20b9ac13384ee21093f648646d8f4d575c52c5e5d9847f6764"
+    },
+    {
+      "path": "home/.config/nvim/lua/config/lazy.lua",
+      "source": ".config/nvim/lua/config/lazy.lua",
+      "type": "file",
+      "bytes": 1856,
+      "sha256": "14653a615b10689aa91915f45c284d07d5e7cb6c5f21fdbbf82c7664b9db4eb0"
+    },
+    {
+      "path": "home/.config/nvim/lua/config/options.lua",
+      "source": ".config/nvim/lua/config/options.lua",
+      "type": "file",
+      "bytes": 212,
+      "sha256": "30d51b75969f1f8c16964e4495c6477234bc031a713ffd24ffdf6e5a33cd1ef9"
+    },
+    {
+      "path": "home/.config/nvim/lua/plugins/better-escape.lua",
+      "source": ".config/nvim/lua/plugins/better-escape.lua",
+      "type": "file",
+      "bytes": 293,
+      "sha256": "db43a5acf3f2116334a0ebaca758b39e91f3141c6b16d73fadb2af1b05a58b4a"
+    },
+    {
+      "path": "home/.config/nvim/lua/plugins/colorscheme.lua",
+      "source": ".config/nvim/lua/plugins/colorscheme.lua",
+      "type": "file",
+      "bytes": 273,
+      "sha256": "8fdaee7a02034ce0797708318fa86a69adee020bf391264fe26e230bf55a3146"
+    },
+    {
+      "path": "home/.config/nvim/lua/plugins/example.lua",
+      "source": ".config/nvim/lua/plugins/example.lua",
+      "type": "file",
+      "bytes": 5295,
+      "sha256": "63cab8b37a319da640b073b6d654b11952776eac8cb55d8a6ac00e5f171366ba"
+    },
+    {
+      "path": "home/.config/nvim/lua/plugins/langmapper.lua",
+      "source": ".config/nvim/lua/plugins/langmapper.lua",
+      "type": "file",
+      "bytes": 275,
+      "sha256": "4febbc5d106663f564b4e213c94567982e3f1c16a2699ea2f34904588952fe86"
+    },
+    {
+      "path": "home/.config/nvim/options.lua",
+      "source": ".config/nvim/options.lua",
+      "type": "file",
+      "bytes": 858,
+      "sha256": "07a67819c7c3f5d14cd65b6b8451cf69e17d7f024dd1ca3d49e2b1f414948d1a"
+    },
+    {
+      "path": "home/.config/nvim/stylua.toml",
+      "source": ".config/nvim/stylua.toml",
+      "type": "file",
+      "bytes": 58,
+      "sha256": "59841fbcee7b707144c6a470e96e96e96062d7a59d2e45bac445984d863e1af2"
+    },
+    {
+      "path": "home/.config/fish/config.fish",
+      "source": ".config/fish/config.fish",
+      "type": "file",
+      "bytes": 160,
+      "sha256": "1adf785f89e0c28afacf4c45afcd3d44bc7c026fd58072009d894c57f4ff7b03"
+    },
+    {
+      "path": "home/.config/fish/fish_variables",
+      "source": ".config/fish/fish_variables",
+      "type": "file",
+      "bytes": 3577,
+      "sha256": "65bfd35ee1c070a7355f6ab5e7e741934fc9c8a50edf4d039d5ea126c0d4a92b"
+    },
+    {
+      "path": "home/.config/gtk-3.0/assets/close-active.svg",
+      "source": ".config/gtk-3.0/assets/close-active.svg",
+      "type": "file",
+      "bytes": 1470,
+      "sha256": "8179c8263fe6dbf99bc7890e1d1baede7506ebf1da48f84780d5ca241c046944"
+    },
+    {
+      "path": "home/.config/gtk-3.0/assets/close-backdrop-active.svg",
+      "source": ".config/gtk-3.0/assets/close-backdrop-active.svg",
+      "type": "file",
+      "bytes": 1470,
+      "sha256": "851cc8b3f6b5a6313e1e1ce74416e36e4367d3211d6d7b74eab4b9bfb7c57654"
+    },
+    {
+      "path": "home/.config/gtk-3.0/assets/close-backdrop-hover.svg",
+      "source": ".config/gtk-3.0/assets/close-backdrop-hover.svg",
+      "type": "file",
+      "bytes": 1470,
+      "sha256": "3b207496e31c6718a12106871ddbb965b65227ca083a71628eaead7aea934d6e"
+    },
+    {
+      "path": "home/.config/gtk-3.0/assets/close-backdrop-normal.svg",
+      "source": ".config/gtk-3.0/assets/close-backdrop-normal.svg",
+      "type": "file",
+      "bytes": 1265,
+      "sha256": "8d1f1a2b7cbb8f36f8b1dce833d6c049d5fe95cd49e7b0cc6250607e3486076a"
+    },
+    {
+      "path": "home/.config/gtk-3.0/assets/close-hover.svg",
+      "source": ".config/gtk-3.0/assets/close-hover.svg",
+      "type": "file",
+      "bytes": 1470,
+      "sha256": "3018c949d48a846f24711d9932d8f467f628cd5ccba72a2a2768ea5695894a2a"
+    },
+    {
+      "path": "home/.config/gtk-3.0/assets/close-normal.svg",
+      "source": ".config/gtk-3.0/assets/close-normal.svg",
+      "type": "file",
+      "bytes": 1265,
+      "sha256": "23b5ccd63afd2fdb6ee4191bd0d9d380ad3b70278329cee09d09494919391833"
+    },
+    {
+      "path": "home/.config/gtk-3.0/assets/maximize-active.svg",
+      "source": ".config/gtk-3.0/assets/maximize-active.svg",
+      "type": "file",
+      "bytes": 1409,
+      "sha256": "b2a251e1453610b3d23fa7b362efbf83298ff83a530ae47451514e6ee045dca9"
+    },
+    {
+      "path": "home/.config/gtk-3.0/assets/maximize-backdrop-active.svg",
+      "source": ".config/gtk-3.0/assets/maximize-backdrop-active.svg",
+      "type": "file",
+      "bytes": 1409,
+      "sha256": "0fcb3786b07085e6aa188bd2f9b15642e6c9e9e812fff0d65f46af9bc155d849"
+    },
+    {
+      "path": "home/.config/gtk-3.0/assets/maximize-backdrop-hover.svg",
+      "source": ".config/gtk-3.0/assets/maximize-backdrop-hover.svg",
+      "type": "file",
+      "bytes": 1409,
+      "sha256": "0fcb3786b07085e6aa188bd2f9b15642e6c9e9e812fff0d65f46af9bc155d849"
+    },
+    {
+      "path": "home/.config/gtk-3.0/assets/maximize-backdrop-normal.svg",
+      "source": ".config/gtk-3.0/assets/maximize-backdrop-normal.svg",
+      "type": "file",
+      "bytes": 1204,
+      "sha256": "e8c4e13719da5dd693188903ca3543eeec779d977a903e3e51cec3e6620bf754"
+    },
+    {
+      "path": "home/.config/gtk-3.0/assets/maximize-hover.svg",
+      "source": ".config/gtk-3.0/assets/maximize-hover.svg",
+      "type": "file",
+      "bytes": 1409,
+      "sha256": "353ff1d027be36f62353c6b002e3558a9ecb15775ed5d21cc051e9bb3aa1c8d9"
+    },
+    {
+      "path": "home/.config/gtk-3.0/assets/maximize-normal.svg",
+      "source": ".config/gtk-3.0/assets/maximize-normal.svg",
+      "type": "file",
+      "bytes": 1204,
+      "sha256": "ce044c8e620db025db2a6f0c81451039c94c266d4f4b355f56090e14dcb4ce86"
+    },
+    {
+      "path": "home/.config/gtk-3.0/assets/maximized-active.svg",
+      "source": ".config/gtk-3.0/assets/maximized-active.svg",
+      "type": "file",
+      "bytes": 1397,
+      "sha256": "19a2c2f4f6cc9e6daed40089be1b86c24dd951bd4a53d803e2e0bcb2e90944fb"
+    },
+    {
+      "path": "home/.config/gtk-3.0/assets/maximized-backdrop-active.svg",
+      "source": ".config/gtk-3.0/assets/maximized-backdrop-active.svg",
+      "type": "file",
+      "bytes": 1397,
+      "sha256": "de485e76d580e0b8e726bb886c0a97c9a0e11136700ea56263fa861f8a7a266f"
+    },
+    {
+      "path": "home/.config/gtk-3.0/assets/maximized-backdrop-hover.svg",
+      "source": ".config/gtk-3.0/assets/maximized-backdrop-hover.svg",
+      "type": "file",
+      "bytes": 1397,
+      "sha256": "de485e76d580e0b8e726bb886c0a97c9a0e11136700ea56263fa861f8a7a266f"
+    },
+    {
+      "path": "home/.config/gtk-3.0/assets/maximized-backdrop-normal.svg",
+      "source": ".config/gtk-3.0/assets/maximized-backdrop-normal.svg",
+      "type": "file",
+      "bytes": 1192,
+      "sha256": "3f446d6df1a0733f6f39497a9366ec83c008b8ae860a1a2bf6817b19a3865b14"
+    },
+    {
+      "path": "home/.config/gtk-3.0/assets/maximized-hover.svg",
+      "source": ".config/gtk-3.0/assets/maximized-hover.svg",
+      "type": "file",
+      "bytes": 1397,
+      "sha256": "cfdd3f5a5aa42d350c0ff331596123c552a9e3c55f37e786271f098b293a922e"
+    },
+    {
+      "path": "home/.config/gtk-3.0/assets/maximized-normal.svg",
+      "source": ".config/gtk-3.0/assets/maximized-normal.svg",
+      "type": "file",
+      "bytes": 1192,
+      "sha256": "22f418bfb333d7488a1315d1c8eae09fb85ccd829370c54a66d7270c0bb6ccff"
+    },
+    {
+      "path": "home/.config/gtk-3.0/assets/minimize-active.svg",
+      "source": ".config/gtk-3.0/assets/minimize-active.svg",
+      "type": "file",
+      "bytes": 1408,
+      "sha256": "d70bca669cf71a143bb97814a7b93a85348fa8ef0b81c3ae08490149e1b07f73"
+    },
+    {
+      "path": "home/.config/gtk-3.0/assets/minimize-backdrop-active.svg",
+      "source": ".config/gtk-3.0/assets/minimize-backdrop-active.svg",
+      "type": "file",
+      "bytes": 1408,
+      "sha256": "41a23526ba2d93e19ff4129098e8344846e27c765cfe507571c75dc5e7d7f50e"
+    },
+    {
+      "path": "home/.config/gtk-3.0/assets/minimize-backdrop-hover.svg",
+      "source": ".config/gtk-3.0/assets/minimize-backdrop-hover.svg",
+      "type": "file",
+      "bytes": 1408,
+      "sha256": "41a23526ba2d93e19ff4129098e8344846e27c765cfe507571c75dc5e7d7f50e"
+    },
+    {
+      "path": "home/.config/gtk-3.0/assets/minimize-backdrop-normal.svg",
+      "source": ".config/gtk-3.0/assets/minimize-backdrop-normal.svg",
+      "type": "file",
+      "bytes": 1203,
+      "sha256": "56ebcdaf4bd781b34ab23cb099f235267d1afce9bd4e96bfac3a4c70b6a71726"
+    },
+    {
+      "path": "home/.config/gtk-3.0/assets/minimize-hover.svg",
+      "source": ".config/gtk-3.0/assets/minimize-hover.svg",
+      "type": "file",
+      "bytes": 1408,
+      "sha256": "f2d269aa6da97184d53b227468b46033c27067f6b875a4e056edc3dfee953978"
+    },
+    {
+      "path": "home/.config/gtk-3.0/assets/minimize-normal.svg",
+      "source": ".config/gtk-3.0/assets/minimize-normal.svg",
+      "type": "file",
+      "bytes": 1203,
+      "sha256": "1a87b951c05665de22ff40edd72b96aca428fa1da839418788fc433e67a611d0"
+    },
+    {
+      "path": "home/.config/gtk-3.0/colors.css",
+      "source": ".config/gtk-3.0/colors.css",
+      "type": "file",
+      "bytes": 4998,
+      "sha256": "cf96b91e4e5d4c01836ce7681392c23ee3c3afefcd6f552f3d585e7437160908"
+    },
+    {
+      "path": "home/.config/gtk-3.0/gtk.css",
+      "source": ".config/gtk-3.0/gtk.css",
+      "type": "file",
+      "bytes": 21,
+      "sha256": "39f53137010efbba8ccbbba7a5f9a744291bbb70f51fd743797d82dcceef62b7"
+    },
+    {
+      "path": "home/.config/gtk-3.0/settings.ini",
+      "source": ".config/gtk-3.0/settings.ini",
+      "type": "file",
+      "bytes": 549,
+      "sha256": "1427652087750e241d69949d6861f9b83e9e20b1960bc106872e687bee3a1161"
+    },
+    {
+      "path": "home/.config/gtk-3.0/window_decorations.css",
+      "source": ".config/gtk-3.0/window_decorations.css",
+      "type": "file",
+      "bytes": 3895,
+      "sha256": "2bff7af9575f5bca8336018640fd2d049b8c04c0386ffe51c8edd92424c1025c"
+    },
+    {
+      "path": "home/.config/gtk-4.0/colors.css",
+      "source": ".config/gtk-4.0/colors.css",
+      "type": "file",
+      "bytes": 4998,
+      "sha256": "cf96b91e4e5d4c01836ce7681392c23ee3c3afefcd6f552f3d585e7437160908"
+    },
+    {
+      "path": "home/.config/gtk-4.0/gtk.css",
+      "source": ".config/gtk-4.0/gtk.css",
+      "type": "file",
+      "bytes": 21,
+      "sha256": "39f53137010efbba8ccbbba7a5f9a744291bbb70f51fd743797d82dcceef62b7"
+    },
+    {
+      "path": "home/.config/gtk-4.0/settings.ini",
+      "source": ".config/gtk-4.0/settings.ini",
+      "type": "file",
+      "bytes": 420,
+      "sha256": "a9a50c6ce814e173a5d1c0a8f04daffdef334934ca43ca87a14b163eaf05f6bb"
+    },
+    {
+      "path": "home/.config/gtk-4.0/window_decorations.css",
+      "source": ".config/gtk-4.0/window_decorations.css",
+      "type": "file",
+      "bytes": 3895,
+      "sha256": "2bff7af9575f5bca8336018640fd2d049b8c04c0386ffe51c8edd92424c1025c"
+    },
+    {
+      "path": "home/.config/fontconfig/fonts.conf",
+      "source": ".config/fontconfig/fonts.conf",
+      "type": "file",
+      "bytes": 2224,
+      "sha256": "c89d50d9296696c17f0caeba981a536005f355e0099f2db3e5033d291a1a70df"
+    },
+    {
+      "path": "home/.config/fastfetch/config.jsonc",
+      "source": ".config/fastfetch/config.jsonc",
+      "type": "file",
+      "bytes": 4217,
+      "sha256": "12e3e23d57b6fb9934938ea119d4f860f5c43d5271b56bd239e7cbcf2650607a"
+    },
+    {
+      "path": "home/.config/alacritty/alacritty.toml",
+      "source": ".config/alacritty/alacritty.toml",
+      "type": "file",
+      "bytes": 2327,
+      "sha256": "2930a70ba00e2a02d6d95e4d7fe255d181e00a90b97217fea5609b1ae1ca8c5c"
+    },
+    {
+      "path": "home/.config/xsettingsd/xsettingsd.conf",
+      "source": ".config/xsettingsd/xsettingsd.conf",
+      "type": "file",
+      "bytes": 446,
+      "sha256": "5700842fe8a86483b1d216147c7887779afef845c8933ee8e028b45068e2650a"
+    },
+    {
+      "path": "home/.config/Thunar/accels.scm",
+      "source": ".config/Thunar/accels.scm",
+      "type": "file",
+      "bytes": 8556,
+      "sha256": "ba45f153ee49f53627b88a968df0d059fff2ecde9c3b309123ee5e3a8efd1f84"
+    },
+    {
+      "path": "home/.config/Thunar/uca.xml",
+      "source": ".config/Thunar/uca.xml",
+      "type": "file",
+      "bytes": 419,
+      "sha256": "24ea702f6c82dc805cf3bce99f46c862e70e78d82b344434ee31f4ac43081a7e"
+    },
+    {
+      "path": "home/.config/studio-mic/router.json",
+      "source": ".config/studio-mic/router.json",
+      "type": "file",
+      "bytes": 2039,
+      "sha256": "1201794a1534ce5fb44598604c0608497f5909de7eb09dae28a6117e4f2c8972"
+    },
+    {
+      "path": "home/.config/pipewire/pipewire.conf.d/90-studio-mic.conf",
+      "source": ".config/pipewire/pipewire.conf.d/90-studio-mic.conf",
+      "type": "file",
+      "bytes": 868,
+      "sha256": "586b4237eec9e7eb23b097fa4275d3e6315495165e31d7e5c84908ba9b26c429"
+    },
+    {
+      "path": "home/.config/easyeffects/db/easyeffectsrc",
+      "source": ".config/easyeffects/db/easyeffectsrc",
+      "type": "file",
+      "bytes": 306,
+      "sha256": "9ed6d62ef9bdcbcb7e1fc511a1e927e229a621ca2bbbc543ee24e13e81bc24db"
+    },
+    {
+      "path": "home/.config/easyeffects/db/equalizerrc",
+      "source": ".config/easyeffects/db/equalizerrc",
+      "type": "file",
+      "bytes": 2589,
+      "sha256": "d82d6467bfedd8aa6c38fc2b3c3cd748ada99f5d81e1892975d33f0ae99fd752"
+    },
+    {
+      "path": "home/.config/autostart/com.github.wwmm.easyeffects.desktop",
+      "source": ".config/autostart/com.github.wwmm.easyeffects.desktop",
+      "type": "file",
+      "bytes": 254,
+      "sha256": "a6833c603f0e962c631fe1a59d42ff6f99cdbbb2e2347a854f68e7daac081eda"
+    },
+    {
+      "path": "home/.config/kdeglobals",
+      "source": ".config/kdeglobals",
+      "type": "file",
+      "bytes": 4170,
+      "sha256": "6ad25a653e9a0f3f37ac18bd44d0cb434ae0b62675908c03e3eda90976e2d2f9"
+    },
+    {
+      "path": "home/.config/gtkrc",
+      "source": ".config/gtkrc",
+      "type": "file",
+      "bytes": 51,
+      "sha256": "4bf61e516849cd31cfa16924ff05494cecf2efb14c36cf2b79f454a2fafaa2d2"
+    },
+    {
+      "path": "home/.config/gtkrc-2.0",
+      "source": ".config/gtkrc-2.0",
+      "type": "file",
+      "bytes": 86,
+      "sha256": "6061ab7f955a65d7cdb8f8021812a9ffda71dfcdfc217b2ea6a243b10924b55c"
+    },
+    {
+      "path": "home/.config/mimeapps.list",
+      "source": ".config/mimeapps.list",
+      "type": "file",
+      "bytes": 2038,
+      "sha256": "94abbbe6740d6a4761b8c8de1ecb2882fdb168af6afeac227208d289f7df7434"
+    },
+    {
+      "path": "home/.config/user-dirs.dirs",
+      "source": ".config/user-dirs.dirs",
+      "type": "file",
+      "bytes": 667,
+      "sha256": "f40be4b6772dc3b7ec699a0cc156bbb505ccc6965ae0b3254613e1d0e8bfb07c"
+    },
+    {
+      "path": "home/.config/user-dirs.locale",
+      "source": ".config/user-dirs.locale",
+      "type": "file",
+      "bytes": 5,
+      "sha256": "674ac4b0bd40c5764a1ddf4e0119e9b4ee02f743211eefcf7b27c932a4831a4b"
+    },
+    {
+      "path": "home/.config/kwinoutputconfig.json",
+      "source": ".config/kwinoutputconfig.json",
+      "type": "file",
+      "bytes": 7921,
+      "sha256": "32c595d37b501f07aa8a27e099bdf00498e3888cd9ec1effbb1826881b74b5a6"
+    },
+    {
+      "path": "home/.config/kcminputrc",
+      "source": ".config/kcminputrc",
+      "type": "file",
+      "bytes": 186,
+      "sha256": "ef6a157fa9b957ada4ed70f718e31635283a70751f2953a49002385cc397c03f"
+    },
+    {
+      "path": "home/.config/kcmfonts",
+      "source": ".config/kcmfonts",
+      "type": "file",
+      "bytes": 25,
+      "sha256": "352777f6550e60a23e64506c8b496ab545bf125e40cfa4bcd55eea971b547a0d"
+    },
+    {
+      "path": "home/.config/falkTX/Carla2.conf",
+      "source": ".config/falkTX/Carla2.conf",
+      "type": "file",
+      "bytes": 2543,
+      "sha256": "a2dfda788f1d994f803f773f33bc3a60b0af2315dc91bda23281609a81dbc0a6"
+    },
+    {
+      "path": "home/.config/falkTX/Carla2-Control.conf",
+      "source": ".config/falkTX/Carla2-Control.conf",
+      "type": "file",
+      "bytes": 588,
+      "sha256": "f7c6f662eafd24b0b99a206f6e7610d45a611a1a4fabdec5b5ab1356b8e0467c"
+    },
+    {
+      "path": "home/.config/falkTX/Carla2-Rack.conf",
+      "source": ".config/falkTX/Carla2-Rack.conf",
+      "type": "file",
+      "bytes": 478,
+      "sha256": "ba24a4a7fd05e30e1d714323e043c325d543b1ef4c4fc498f5a2b10b274b7bbd"
+    },
+    {
+      "path": "home/.config/falkTX/CarlaOSCConnect.conf",
+      "source": ".config/falkTX/CarlaOSCConnect.conf",
+      "type": "file",
+      "bytes": 53,
+      "sha256": "f78de5d547febba188341680bdd49062def6013223e80eac82179a6f5a42a16f"
+    },
+    {
+      "path": "home/.config/thorium/thorium-flags.conf",
+      "source": ".config/thorium/thorium-flags.conf",
+      "type": "file",
+      "bytes": 69,
+      "sha256": "a26f33cd28fc7cc59300d14db71f5c1f9b654a427353f7460b1265431a1e2ad4"
+    },
+    {
+      "path": "home/.bashrc",
+      "source": ".bashrc",
+      "type": "file",
+      "bytes": 172,
+      "sha256": "959bc596166c9758fdd68836581f6b8f1d6fdb947d580bf24dce607998a077b8"
+    },
+    {
+      "path": "home/.bash_profile",
+      "source": ".bash_profile",
+      "type": "file",
+      "bytes": 57,
+      "sha256": "e149407c2bee17779caec70a7edd3d0000d172e7e4347429b80cb4d55bcec9c2"
+    },
+    {
+      "path": "home/.zshrc",
+      "source": ".zshrc",
+      "type": "file",
+      "bytes": 56,
+      "sha256": "d0c6b70ee1dab79468ad3075a967c6ca98ab87d5680ae76a375954ed7b34fa64"
+    },
+    {
+      "path": "home/.gtkrc-2.0",
+      "source": ".gtkrc-2.0",
+      "type": "file",
+      "bytes": 366,
+      "sha256": "43d7a9061c68dcac0b7d017131d414a83eb6b0e367f75f3817c080faa1cc7752"
+    },
+    {
+      "path": "home/.config/systemd/user/caelestia-session.target",
+      "source": ".config/systemd/user/caelestia-session.target",
+      "type": "file",
+      "bytes": 174,
+      "sha256": "e5f696fffd9c678b3fc50f532e7136e04e31ca13efa2ec40179064d6e029925f"
+    },
+    {
+      "path": "home/.config/systemd/user/hyprstack-session.service",
+      "source": ".config/systemd/user/hyprstack-session.service",
+      "type": "file",
+      "bytes": 502,
+      "sha256": "2e9f87ba512bf2a4b525f4801e3de0b1af7a00abbfeb8fa725619c204941ba3b"
+    },
+    {
+      "path": "home/.config/systemd/user/hyprstack-session.service.d/10-personal-shell.conf",
+      "source": ".config/systemd/user/hyprstack-session.service.d/10-personal-shell.conf",
+      "type": "file",
+      "bytes": 129,
+      "sha256": "d43dcd3d273c3b4169af4d4f72c70014356ed3429c7882d62b0d16ea2285273e"
+    },
+    {
+      "path": "home/.config/systemd/user/hyprstack-session.service.d/20-startup-trace.conf",
+      "source": ".config/systemd/user/hyprstack-session.service.d/20-startup-trace.conf",
+      "type": "file",
+      "bytes": 190,
+      "sha256": "ddbe46a45a47d7e2bb9245f480a95154718dd168da201116da5002cebbffcfac"
+    },
+    {
+      "path": "home/.config/systemd/user/hyprstack-gpu-performance.service",
+      "source": ".config/systemd/user/hyprstack-gpu-performance.service",
+      "type": "file",
+      "bytes": 353,
+      "sha256": "c951bd0e9eec5161f7f774d3596f710824b69f0a47ec640f96a9df4dfd5da4a0"
+    },
+    {
+      "path": "home/.config/systemd/user/hyprstack-startup-trace.service",
+      "source": ".config/systemd/user/hyprstack-startup-trace.service",
+      "type": "file",
+      "bytes": 318,
+      "sha256": "c9f92982ae4843437aec99a6edfa72a7f9861319637279f4177f0bece3336b79"
+    },
+    {
+      "path": "home/.config/systemd/user/studio-mic-carla.service",
+      "source": ".config/systemd/user/studio-mic-carla.service",
+      "type": "file",
+      "bytes": 336,
+      "sha256": "fd0f580ac135acddcfa2dc78db9cc8bb474a2a473350a8e5c66835d68d8c4e46"
+    },
+    {
+      "path": "home/.config/systemd/user/studio-mic-router.service",
+      "source": ".config/systemd/user/studio-mic-router.service",
+      "type": "file",
+      "bytes": 381,
+      "sha256": "21049d1b29a848851eca96da167cf582d53c213237cf7588b248fd373b45f497"
+    },
+    {
+      "path": "home/.config/systemd/user/default.target.wants/studio-mic-carla.service",
+      "source": ".config/systemd/user/default.target.wants/studio-mic-carla.service",
+      "type": "symlink",
+      "target": "../studio-mic-carla.service"
+    },
+    {
+      "path": "home/.config/systemd/user/default.target.wants/studio-mic-router.service",
+      "source": ".config/systemd/user/default.target.wants/studio-mic-router.service",
+      "type": "symlink",
+      "target": "../studio-mic-router.service"
+    },
+    {
+      "path": "home/.local/bin/caelestia-session-start",
+      "source": ".local/bin/caelestia-session-start",
+      "type": "file",
+      "bytes": 794,
+      "sha256": "8ca3e0831d9c37e55903a2bb96927aa6b30bf92e1f0926ce9900060384aea4f9"
+    },
+    {
+      "path": "home/.local/bin/hyprstack-dim",
+      "source": ".local/bin/hyprstack-dim",
+      "type": "file",
+      "bytes": 568,
+      "sha256": "6f68ccf5709ef24494d99d1915d93952842113576b23c8072cac31ecc4299682"
+    },
+    {
+      "path": "home/.local/bin/studio-mic-router",
+      "source": ".local/bin/studio-mic-router",
+      "type": "file",
+      "bytes": 7133,
+      "sha256": "273779044c08f951b0ba6edae24874227b16be119f402890f14f96f2c028d62e"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/LICENSE",
+      "source": ".local/share/hyprstack-personal/shell/LICENSE",
+      "type": "symlink",
+      "target": "../../hyprstack/shell/LICENSE"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/assets/bongocat.gif",
+      "source": ".local/share/hyprstack-personal/shell/assets/bongocat.gif",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/assets/bongocat.gif"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/assets/brightness.py",
+      "source": ".local/share/hyprstack-personal/shell/assets/brightness.py",
+      "type": "file",
+      "bytes": 9480,
+      "sha256": "e5dcf11ea2a40f0529a95cb7ccd284a54a1ddeb526ceeb10abb7a580ae0b84d5"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/assets/diagnostics.py",
+      "source": ".local/share/hyprstack-personal/shell/assets/diagnostics.py",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/assets/diagnostics.py"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/assets/dino.png",
+      "source": ".local/share/hyprstack-personal/shell/assets/dino.png",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/assets/dino.png"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/assets/google-sans-flex",
+      "source": ".local/share/hyprstack-personal/shell/assets/google-sans-flex",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/assets/google-sans-flex"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/assets/hyprland/config",
+      "source": ".local/share/hyprstack-personal/shell/assets/hyprland/config",
+      "type": "symlink",
+      "target": "../../../../hyprstack/shell/assets/hyprland/config"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/assets/hyprland/dimming.lua",
+      "source": ".local/share/hyprstack-personal/shell/assets/hyprland/dimming.lua",
+      "type": "file",
+      "bytes": 1074,
+      "sha256": "b17421c8ea4064b342408408b8b16830c135a7bb3de0fc5b1e0225fb24f08340"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/assets/hyprland/layouts.lua",
+      "source": ".local/share/hyprstack-personal/shell/assets/hyprland/layouts.lua",
+      "type": "symlink",
+      "target": "../../../../hyprstack/shell/assets/hyprland/layouts.lua"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/assets/hyprland/window-action.py",
+      "source": ".local/share/hyprstack-personal/shell/assets/hyprland/window-action.py",
+      "type": "symlink",
+      "target": "../../../../hyprstack/shell/assets/hyprland/window-action.py"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/assets/hyprstack_cli.py",
+      "source": ".local/share/hyprstack-personal/shell/assets/hyprstack_cli.py",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/assets/hyprstack_cli.py"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/assets/i18n.py",
+      "source": ".local/share/hyprstack-personal/shell/assets/i18n.py",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/assets/i18n.py"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/assets/kurukuru.gif",
+      "source": ".local/share/hyprstack-personal/shell/assets/kurukuru.gif",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/assets/kurukuru.gif"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/assets/logo.svg",
+      "source": ".local/share/hyprstack-personal/shell/assets/logo.svg",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/assets/logo.svg"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/assets/material-symbols",
+      "source": ".local/share/hyprstack-personal/shell/assets/material-symbols",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/assets/material-symbols"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/assets/notification_tools.py",
+      "source": ".local/share/hyprstack-personal/shell/assets/notification_tools.py",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/assets/notification_tools.py"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/assets/schemes",
+      "source": ".local/share/hyprstack-personal/shell/assets/schemes",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/assets/schemes"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/assets/session_runner.py",
+      "source": ".local/share/hyprstack-personal/shell/assets/session_runner.py",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/assets/session_runner.py"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/assets/theme_manager.py",
+      "source": ".local/share/hyprstack-personal/shell/assets/theme_manager.py",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/assets/theme_manager.py"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/assets/wallpaper.webp",
+      "source": ".local/share/hyprstack-personal/shell/assets/wallpaper.webp",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/assets/wallpaper.webp"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/assets/wrap_term_launch.sh",
+      "source": ".local/share/hyprstack-personal/shell/assets/wrap_term_launch.sh",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/assets/wrap_term_launch.sh"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/components",
+      "source": ".local/share/hyprstack-personal/shell/components",
+      "type": "symlink",
+      "target": "../../hyprstack/shell/components"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/modules/BatteryMonitor.qml",
+      "source": ".local/share/hyprstack-personal/shell/modules/BatteryMonitor.qml",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/modules/BatteryMonitor.qml"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/modules/GSFLoader.qml",
+      "source": ".local/share/hyprstack-personal/shell/modules/GSFLoader.qml",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/modules/GSFLoader.qml"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/modules/IdleMonitors.qml",
+      "source": ".local/share/hyprstack-personal/shell/modules/IdleMonitors.qml",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/modules/IdleMonitors.qml"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/modules/ServiceLoader.qml",
+      "source": ".local/share/hyprstack-personal/shell/modules/ServiceLoader.qml",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/modules/ServiceLoader.qml"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/modules/Shortcuts.qml",
+      "source": ".local/share/hyprstack-personal/shell/modules/Shortcuts.qml",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/modules/Shortcuts.qml"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/modules/areapicker",
+      "source": ".local/share/hyprstack-personal/shell/modules/areapicker",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/modules/areapicker"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/modules/background",
+      "source": ".local/share/hyprstack-personal/shell/modules/background",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/modules/background"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/modules/bar",
+      "source": ".local/share/hyprstack-personal/shell/modules/bar",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/modules/bar"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/modules/dashboard",
+      "source": ".local/share/hyprstack-personal/shell/modules/dashboard",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/modules/dashboard"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/modules/drawers",
+      "source": ".local/share/hyprstack-personal/shell/modules/drawers",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/modules/drawers"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/modules/launcher",
+      "source": ".local/share/hyprstack-personal/shell/modules/launcher",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/modules/launcher"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/modules/lock",
+      "source": ".local/share/hyprstack-personal/shell/modules/lock",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/modules/lock"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/modules/nexus",
+      "source": ".local/share/hyprstack-personal/shell/modules/nexus",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/modules/nexus"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/modules/notifications",
+      "source": ".local/share/hyprstack-personal/shell/modules/notifications",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/modules/notifications"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/modules/osd/Content.qml",
+      "source": ".local/share/hyprstack-personal/shell/modules/osd/Content.qml",
+      "type": "file",
+      "bytes": 4457,
+      "sha256": "3bba0a47d910ff799e083249cac530dd4d71438cdac4b104abe49e300caed838"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/modules/osd/Wrapper.qml",
+      "source": ".local/share/hyprstack-personal/shell/modules/osd/Wrapper.qml",
+      "type": "file",
+      "bytes": 2868,
+      "sha256": "151d4bedbc00a6e8325606fb20614d9bbd3b8969464844b898e10058b57ed88a"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/modules/overview",
+      "source": ".local/share/hyprstack-personal/shell/modules/overview",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/modules/overview"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/modules/polkit",
+      "source": ".local/share/hyprstack-personal/shell/modules/polkit",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/modules/polkit"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/modules/session",
+      "source": ".local/share/hyprstack-personal/shell/modules/session",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/modules/session"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/modules/sidebar",
+      "source": ".local/share/hyprstack-personal/shell/modules/sidebar",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/modules/sidebar"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/modules/switcher",
+      "source": ".local/share/hyprstack-personal/shell/modules/switcher",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/modules/switcher"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/modules/utilities",
+      "source": ".local/share/hyprstack-personal/shell/modules/utilities",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/modules/utilities"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/modules/windowinfo",
+      "source": ".local/share/hyprstack-personal/shell/modules/windowinfo",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/modules/windowinfo"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/scripts/test_brightness_backends.py",
+      "source": ".local/share/hyprstack-personal/shell/scripts/test_brightness_backends.py",
+      "type": "file",
+      "bytes": 7841,
+      "sha256": "b62a4c91c3bba1a74b5ae8eabb15f38606549b0da83ba70307fe924cfbb4ca17"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/scripts/test_brightness_qml.py",
+      "source": ".local/share/hyprstack-personal/shell/scripts/test_brightness_qml.py",
+      "type": "file",
+      "bytes": 9856,
+      "sha256": "b850759bf709366f2736748b1fbdcde629eeaa68d66d93c104347f2d38a5f8aa"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/services/Audio.qml",
+      "source": ".local/share/hyprstack-personal/shell/services/Audio.qml",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/services/Audio.qml"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/services/Brightness.qml",
+      "source": ".local/share/hyprstack-personal/shell/services/Brightness.qml",
+      "type": "file",
+      "bytes": 12623,
+      "sha256": "a7eb02356ca98acf6d6c6c6c1e788b0010af134188f42bf7a998b9fff11d0160"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/services/Colours.qml",
+      "source": ".local/share/hyprstack-personal/shell/services/Colours.qml",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/services/Colours.qml"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/services/Effects.qml",
+      "source": ".local/share/hyprstack-personal/shell/services/Effects.qml",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/services/Effects.qml"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/services/GameMode.qml",
+      "source": ".local/share/hyprstack-personal/shell/services/GameMode.qml",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/services/GameMode.qml"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/services/Hypr.qml",
+      "source": ".local/share/hyprstack-personal/shell/services/Hypr.qml",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/services/Hypr.qml"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/services/IdleInhibitor.qml",
+      "source": ".local/share/hyprstack-personal/shell/services/IdleInhibitor.qml",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/services/IdleInhibitor.qml"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/services/Keybinds.js",
+      "source": ".local/share/hyprstack-personal/shell/services/Keybinds.js",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/services/Keybinds.js"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/services/Keybinds.qml",
+      "source": ".local/share/hyprstack-personal/shell/services/Keybinds.qml",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/services/Keybinds.qml"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/services/Nmcli.qml",
+      "source": ".local/share/hyprstack-personal/shell/services/Nmcli.qml",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/services/Nmcli.qml"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/services/NotifData.qml",
+      "source": ".local/share/hyprstack-personal/shell/services/NotifData.qml",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/services/NotifData.qml"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/services/NotificationStore.js",
+      "source": ".local/share/hyprstack-personal/shell/services/NotificationStore.js",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/services/NotificationStore.js"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/services/Notifs.qml",
+      "source": ".local/share/hyprstack-personal/shell/services/Notifs.qml",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/services/Notifs.qml"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/services/Overview.qml",
+      "source": ".local/share/hyprstack-personal/shell/services/Overview.qml",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/services/Overview.qml"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/services/OverviewLayout.js",
+      "source": ".local/share/hyprstack-personal/shell/services/OverviewLayout.js",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/services/OverviewLayout.js"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/services/Players.qml",
+      "source": ".local/share/hyprstack-personal/shell/services/Players.qml",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/services/Players.qml"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/services/Recorder.qml",
+      "source": ".local/share/hyprstack-personal/shell/services/Recorder.qml",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/services/Recorder.qml"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/services/Screens.qml",
+      "source": ".local/share/hyprstack-personal/shell/services/Screens.qml",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/services/Screens.qml"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/services/ShellState.qml",
+      "source": ".local/share/hyprstack-personal/shell/services/ShellState.qml",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/services/ShellState.qml"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/services/Taskbar.qml",
+      "source": ".local/share/hyprstack-personal/shell/services/Taskbar.qml",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/services/Taskbar.qml"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/services/ThemeSchemes.qml",
+      "source": ".local/share/hyprstack-personal/shell/services/ThemeSchemes.qml",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/services/ThemeSchemes.qml"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/services/Tiling.qml",
+      "source": ".local/share/hyprstack-personal/shell/services/Tiling.qml",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/services/Tiling.qml"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/services/Time.qml",
+      "source": ".local/share/hyprstack-personal/shell/services/Time.qml",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/services/Time.qml"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/services/VPN.qml",
+      "source": ".local/share/hyprstack-personal/shell/services/VPN.qml",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/services/VPN.qml"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/services/Wallpapers.qml",
+      "source": ".local/share/hyprstack-personal/shell/services/Wallpapers.qml",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/services/Wallpapers.qml"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/services/Weather.qml",
+      "source": ".local/share/hyprstack-personal/shell/services/Weather.qml",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/services/Weather.qml"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/services/WeatherData.js",
+      "source": ".local/share/hyprstack-personal/shell/services/WeatherData.js",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/services/WeatherData.js"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/services/WindowSwitcher.qml",
+      "source": ".local/share/hyprstack-personal/shell/services/WindowSwitcher.qml",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/services/WindowSwitcher.qml"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/services/WorkspaceIcons.qml",
+      "source": ".local/share/hyprstack-personal/shell/services/WorkspaceIcons.qml",
+      "type": "symlink",
+      "target": "../../../hyprstack/shell/services/WorkspaceIcons.qml"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/shell.qml",
+      "source": ".local/share/hyprstack-personal/shell/shell.qml",
+      "type": "file",
+      "bytes": 1074,
+      "sha256": "e526a85d56e3a2dc887864baa61681d41977f9b925ad04480af67293170d116a"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/shell/utils",
+      "source": ".local/share/hyprstack-personal/shell/utils",
+      "type": "symlink",
+      "target": "../../hyprstack/shell/utils"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/native/hdr-reference/Makefile",
+      "source": ".local/share/hyprstack-personal/native/hdr-reference/Makefile",
+      "type": "file",
+      "bytes": 392,
+      "sha256": "3860f31c4f45024b7d7e9669cc3bd46e86c121bc7047469c4a34b41298a4c86c"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/native/hdr-reference/capture.hpp",
+      "source": ".local/share/hyprstack-personal/native/hdr-reference/capture.hpp",
+      "type": "file",
+      "bytes": 7614,
+      "sha256": "b77faf567ea658d3e09ad5bbde84b6c0e362deb7342308d91767dee0b4ed1594"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/native/hdr-reference/client-sdr.hpp",
+      "source": ".local/share/hyprstack-personal/native/hdr-reference/client-sdr.hpp",
+      "type": "file",
+      "bytes": 4484,
+      "sha256": "9e12fc5840f87a34e585c5b2349d1ffe19775200c0be9fb95fce2596151e8a77"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/native/hdr-reference/main.cpp",
+      "source": ".local/share/hyprstack-personal/native/hdr-reference/main.cpp",
+      "type": "file",
+      "bytes": 5693,
+      "sha256": "295182eb7c2b4e2235affafe6dd8eaa171a4f4f9b3244f9e21cbb5a352f85c02"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/native/hdr-reference/test-colors.cpp",
+      "source": ".local/share/hyprstack-personal/native/hdr-reference/test-colors.cpp",
+      "type": "file",
+      "bytes": 2202,
+      "sha256": "b356e1f323706735e35cb02f5d2b8ea05602feeacfb5f156bd1e0f5238ef6281"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/native/hdr-reference/test_capture.py",
+      "source": ".local/share/hyprstack-personal/native/hdr-reference/test_capture.py",
+      "type": "file",
+      "bytes": 11796,
+      "sha256": "1eb323e7a7fd01fd87a4eba29c573f7c8647133f7d63b04d7d47b222d055b484"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/native/hdr-reference/test_native.py",
+      "source": ".local/share/hyprstack-personal/native/hdr-reference/test_native.py",
+      "type": "file",
+      "bytes": 11779,
+      "sha256": "c7f9a901227e22fe66126211fed552ad668c37acf8047d1f5437f1a30253cfc7"
+    },
+    {
+      "path": "home/.local/share/hyprstack-personal/hyprstack-dim",
+      "source": ".local/share/hyprstack-personal/hyprstack-dim",
+      "type": "file",
+      "bytes": 568,
+      "sha256": "6f68ccf5709ef24494d99d1915d93952842113576b23c8072cac31ecc4299682"
+    },
+    {
+      "path": "home/.local/share/hyprstack/shell/assets/gpu_performance.py",
+      "source": ".local/share/hyprstack/shell/assets/gpu_performance.py",
+      "type": "file",
+      "bytes": 3368,
+      "sha256": "8a8a8e251fadca6c8a13ff52b3055bd57ae2353439b505c1f95b960ade847f2e"
+    },
+    {
+      "path": "home/.local/share/hyprstack/shell/assets/startup_trace.py",
+      "source": ".local/share/hyprstack/shell/assets/startup_trace.py",
+      "type": "file",
+      "bytes": 4718,
+      "sha256": "ae5f0e3a073670781e0a0d9daf401c1ae85b60e12b5a9f2c3ed6717ae6cc32ff"
+    },
+    {
+      "path": "home/.local/share/hyprstack/shell/assets/wallpaper.webp",
+      "source": ".local/share/hyprstack/shell/assets/wallpaper.webp",
+      "type": "file",
+      "bytes": 5571692,
+      "sha256": "1b87f61b667d6a5fe4bc80b3ce761ba51a3ec0451e6705561a3632a5e9e7220c"
+    },
+    {
+      "path": "home/.local/share/fonts/hasklug-restore/HasklugNerdFontMono-Black.otf",
+      "source": ".local/share/fonts/hasklug-restore/HasklugNerdFontMono-Black.otf",
+      "type": "file",
+      "bytes": 2432940,
+      "sha256": "0f8a3cf29011452e3594d9f518c54abebe545868e51a52555c447424e65857da"
+    },
+    {
+      "path": "home/.local/share/fonts/hasklug-restore/HasklugNerdFontMono-BlackItalic.otf",
+      "source": ".local/share/fonts/hasklug-restore/HasklugNerdFontMono-BlackItalic.otf",
+      "type": "file",
+      "bytes": 2404456,
+      "sha256": "f5954b578e57cbb2bb9f1e1262134f4c162a06e8828021e1986c6fa600229643"
+    },
+    {
+      "path": "home/.local/share/fonts/hasklug-restore/HasklugNerdFontMono-Bold.otf",
+      "source": ".local/share/fonts/hasklug-restore/HasklugNerdFontMono-Bold.otf",
+      "type": "file",
+      "bytes": 2430960,
+      "sha256": "7a4b8ea8af59778b9e9396f3aa261fb99cf6cba1c86030e5f9d26ef1c9410af0"
+    },
+    {
+      "path": "home/.local/share/fonts/hasklug-restore/HasklugNerdFontMono-BoldItalic.otf",
+      "source": ".local/share/fonts/hasklug-restore/HasklugNerdFontMono-BoldItalic.otf",
+      "type": "file",
+      "bytes": 2402228,
+      "sha256": "9f98765e704771c63741bc8c2d366479035029bdf9e56dcc98185882d5cd640c"
+    },
+    {
+      "path": "home/.local/share/fonts/hasklug-restore/HasklugNerdFontMono-ExtraLight.otf",
+      "source": ".local/share/fonts/hasklug-restore/HasklugNerdFontMono-ExtraLight.otf",
+      "type": "file",
+      "bytes": 2421528,
+      "sha256": "534c8206c08aec021b95ef2f5c4620aff119c082a4658a50e04b2737604e80d5"
+    },
+    {
+      "path": "home/.local/share/fonts/hasklug-restore/HasklugNerdFontMono-ExtraLightItalic.otf",
+      "source": ".local/share/fonts/hasklug-restore/HasklugNerdFontMono-ExtraLightItalic.otf",
+      "type": "file",
+      "bytes": 2396788,
+      "sha256": "d5ae3410cc9ca54e6ff1c0c1c3b4eb39eea6a467d197dd3029f9e7f469e11adb"
+    },
+    {
+      "path": "home/.local/share/fonts/hasklug-restore/HasklugNerdFontMono-Italic.otf",
+      "source": ".local/share/fonts/hasklug-restore/HasklugNerdFontMono-Italic.otf",
+      "type": "file",
+      "bytes": 2398860,
+      "sha256": "b8b7cbbed0ef7b62ba50634b62216b7ff9dd4119ef68bdee8ca5250adddbbc62"
+    },
+    {
+      "path": "home/.local/share/fonts/hasklug-restore/HasklugNerdFontMono-Light.otf",
+      "source": ".local/share/fonts/hasklug-restore/HasklugNerdFontMono-Light.otf",
+      "type": "file",
+      "bytes": 2426612,
+      "sha256": "138f57115f83869435dbdb89851d3bb2256677b108568fc7af33baa9172d196f"
+    },
+    {
+      "path": "home/.local/share/fonts/hasklug-restore/HasklugNerdFontMono-LightItalic.otf",
+      "source": ".local/share/fonts/hasklug-restore/HasklugNerdFontMono-LightItalic.otf",
+      "type": "file",
+      "bytes": 2398932,
+      "sha256": "de84773f539ea2085fb1fb12b3ff8b154510cba38b46302492b772c333345dbd"
+    },
+    {
+      "path": "home/.local/share/fonts/hasklug-restore/HasklugNerdFontMono-Medium.otf",
+      "source": ".local/share/fonts/hasklug-restore/HasklugNerdFontMono-Medium.otf",
+      "type": "file",
+      "bytes": 2426236,
+      "sha256": "fd8eb2c9821b835d40c1a3bc5a84e175a6d75341e7d65ec09c2f99fdfc711062"
+    },
+    {
+      "path": "home/.local/share/fonts/hasklug-restore/HasklugNerdFontMono-MediumItalic.otf",
+      "source": ".local/share/fonts/hasklug-restore/HasklugNerdFontMono-MediumItalic.otf",
+      "type": "file",
+      "bytes": 2399304,
+      "sha256": "04c600136c644c5c8b863f30d69055247a5116a9f99736dfe29e6d9f357e75ad"
+    },
+    {
+      "path": "home/.local/share/fonts/hasklug-restore/HasklugNerdFontMono-Regular.otf",
+      "source": ".local/share/fonts/hasklug-restore/HasklugNerdFontMono-Regular.otf",
+      "type": "file",
+      "bytes": 2427120,
+      "sha256": "ef891b4d7480774e0d2a9ec7cf87dbb91e30fd597197288b9d427b1c137b25ff"
+    },
+    {
+      "path": "home/.local/share/fonts/hasklug-restore/HasklugNerdFontMono-SemiBold.otf",
+      "source": ".local/share/fonts/hasklug-restore/HasklugNerdFontMono-SemiBold.otf",
+      "type": "file",
+      "bytes": 2427732,
+      "sha256": "00fe48532571adba0fb0e2ab46694207116da49097341028b4cd3a70f437e6a0"
+    },
+    {
+      "path": "home/.local/share/fonts/hasklug-restore/HasklugNerdFontMono-SemiBoldItalic.otf",
+      "source": ".local/share/fonts/hasklug-restore/HasklugNerdFontMono-SemiBoldItalic.otf",
+      "type": "file",
+      "bytes": 2399236,
+      "sha256": "f58def1e33725267fb042f39cc6b0eb4a2bf27d60a911da81dba33c5c57b418b"
+    },
+    {
+      "path": "home/.local/share/fonts/hasklug-restore/LICENSE.md",
+      "source": ".local/share/fonts/hasklug-restore/LICENSE.md",
+      "type": "file",
+      "bytes": 4578,
+      "sha256": "b4c7aedade9a89833c14e1ec8eb5bd7e9ffece58eae0d5b800e00ca42abd418b"
+    },
+    {
+      "path": "home/.local/share/studio-mic/mic-runtime.carxp",
+      "source": ".local/share/studio-mic/mic-runtime.carxp",
+      "type": "file",
+      "bytes": 42241,
+      "sha256": "531b666e67c663bee0229528d269b96ad4833169b0b86df8f4b6cdd9b747d262"
+    },
+    {
+      "path": "home/.local/share/applications/ayugram.desktop",
+      "source": ".local/share/applications/ayugram.desktop",
+      "type": "file",
+      "bytes": 193,
+      "sha256": "152d7b89d4ef62b047b8ea5d0b0211851c97048ddfdb4c3fa499690f9f9618f7"
+    },
+    {
+      "path": "home/.local/share/applications/rudesktop.desktop",
+      "source": ".local/share/applications/rudesktop.desktop",
+      "type": "file",
+      "bytes": 322,
+      "sha256": "b3472585aa8749ef8ab14cc4f730e1e00e9bd2959f6a0340a76e54f0d15a9989"
+    },
+    {
+      "path": "home/.local/share/applications/spun.desktop",
+      "source": ".local/share/applications/spun.desktop",
+      "type": "file",
+      "bytes": 361,
+      "sha256": "a467798aea43db96a376ec470969cb5b549f693940d42b7a1259d191c3cd8700"
+    },
+    {
+      "path": "home/.local/share/applications/throne-url-handler.desktop",
+      "source": ".local/share/applications/throne-url-handler.desktop",
+      "type": "file",
+      "bytes": 233,
+      "sha256": "b3d271467b36665cd82b3b539985c60b845e15378ba40b731ed2e11f287b5313"
+    },
+    {
+      "path": "home/.local/share/applications/userapp-AyuGram Desktop-9RILT3.desktop",
+      "source": ".local/share/applications/userapp-AyuGram Desktop-9RILT3.desktop",
+      "type": "file",
+      "bytes": 161,
+      "sha256": "068ccce5ac63a2da6e45398c63c53fd2121ef8c829deb39d0549ab3ff78265ad"
+    },
+    {
+      "path": "home/.local/share/applications/userapp-AyuGram Desktop-ZF0ZT3.desktop",
+      "source": ".local/share/applications/userapp-AyuGram Desktop-ZF0ZT3.desktop",
+      "type": "file",
+      "bytes": 161,
+      "sha256": "068ccce5ac63a2da6e45398c63c53fd2121ef8c829deb39d0549ab3ff78265ad"
+    },
+    {
+      "path": "home/.local/share/applications/wine-extension-chm.desktop",
+      "source": ".local/share/applications/wine-extension-chm.desktop",
+      "type": "file",
+      "bytes": 251,
+      "sha256": "5e265766ce0fb9bcb52da1ec872e308344ab7000f0432b5c4f02c494282b3954"
+    },
+    {
+      "path": "home/.local/share/applications/wine-extension-crt.desktop",
+      "source": ".local/share/applications/wine-extension-crt.desktop",
+      "type": "file",
+      "bytes": 256,
+      "sha256": "475535fe2dfa7cee8a39c4cbec016d4bae4aa4a061044071c157d6bd9b241d13"
+    },
+    {
+      "path": "home/.local/share/applications/wine-extension-hlp.desktop",
+      "source": ".local/share/applications/wine-extension-hlp.desktop",
+      "type": "file",
+      "bytes": 253,
+      "sha256": "5cc09f8bffbe2c24e21f3df4879232a63aff3b8471f3a7745a9190c40ec260dd"
+    },
+    {
+      "path": "home/.local/share/applications/wine-extension-msp.desktop",
+      "source": ".local/share/applications/wine-extension-msp.desktop",
+      "type": "file",
+      "bytes": 268,
+      "sha256": "25678c5d01beae9e8ec7f7cec0704021b297187ba7a2bff49edd14bf8e19fd56"
+    },
+    {
+      "path": "home/.local/share/applications/wine-extension-reg.desktop",
+      "source": ".local/share/applications/wine-extension-reg.desktop",
+      "type": "file",
+      "bytes": 241,
+      "sha256": "95c9522e3428d6bee36719926b32d5906b7d6e1bedced38e47b4ad18ce30ab40"
+    },
+    {
+      "path": "home/.local/share/applications/wine-extension-vbs.desktop",
+      "source": ".local/share/applications/wine-extension-vbs.desktop",
+      "type": "file",
+      "bytes": 246,
+      "sha256": "1c2eaa76a6a7f29419b139f5d970d33039b32f789d3af46db118cf4f897b3688"
+    },
+    {
+      "path": "home/.local/state/hyprstack/scheme.json",
+      "source": ".local/state/hyprstack/scheme.json",
+      "type": "file",
+      "bytes": 4769,
+      "sha256": "6abf7662408135e577ccb08e9d439cb95e48d2b00ecc9eed33510ee69cbee529"
+    },
+    {
+      "path": "home/.local/state/hyprstack/wallpaper/path.txt",
+      "source": ".local/state/hyprstack/wallpaper/path.txt",
+      "type": "file",
+      "bytes": 52,
+      "sha256": "78abf43d5688ccd0e58656239b053bc80b6d24914e801bf4e2868cb401dd248d"
+    },
+    {
+      "path": "home/.local/state/hyprstack/wallpaper/current",
+      "source": ".local/state/hyprstack/wallpaper/current",
+      "type": "symlink",
+      "target": "../../../../Pictures/wallpapers/ybietl668u6h1.png"
+    },
+    {
+      "path": "home/Pictures/wallpapers/ybietl668u6h1.png",
+      "source": "Pictures/wallpapers/ybietl668u6h1.png",
+      "type": "file",
+      "bytes": 14862280,
+      "sha256": "b1ef471333e20a021895d69237f95a627d2fc238351dc195cd4e373e7cfb2d00"
+    }
+  ],
+  "adjustments": [
+    {
+      "path": "home/.config/hyprstack/titlebars.json",
+      "reason": "Use the rebuilt shell plugin instead of a session-specific test binary.",
+      "original": "/home/hasegawa/.local/share/hyprstack/native/hyprstack-bars-tiling-hover-3a15748d7b91.so",
+      "exported": "/home/hasegawa/.local/share/hyprstack/native/hyprstack-bars.so"
+    }
+  ],
+  "icon_archive": {
+    "path": "assets/papirus-icons.tar.xz",
+    "entries": 103345,
+    "bytes": 22433744,
+    "sha256": "1c0a223abe0d78d8d8c4205c746c4f0bea867a6e5d9e358d11e9c1cf39c0f87b"
+  },
+  "excluded": [
+    {
+      "category": "credentials",
+      "reason": "No SSH/GPG keys, wallets, browser profiles, PulseAudio cookie or API secrets."
+    },
+    {
+      "category": "history",
+      "reason": "No notifications, launcher usage database, browser/shell history or recent documents."
+    },
+    {
+      "category": "runtime",
+      "reason": "No session PIDs, GPU client state, caches, traces, logs or compiled binaries."
+    },
+    {
+      "category": "development",
+      "reason": "No assistant sessions, prompts, git internals, recordings or retired experiments."
+    }
+  ],
+  "external_requirements": [
+    "Hyprstack shell installed and built for Hyprland 0.56.2",
+    "TDR Nova, TDR Molotok, TDR VOS SlickEQ, U78 Saturator, LSP Expander/Deesser/Limiter",
+    "Application executables referenced by desktop launchers; they are not bundled.",
+    "sweet-cursors is selected in hypr-vars.lua but is absent from the current icon search paths."
+  ]
+}

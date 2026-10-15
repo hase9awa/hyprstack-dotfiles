@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Wine Installer
+MimeType=application/microsoftpatch;
+Exec=env "WINEPREFIX=/home/hasegawa/hyprstack/motion-studio/.cache/windows-qa-prefix" wine start /ProgIDOpen "Msi.Patch" %f
+NoDisplay=true
+StartupNotify=true
+Icon=D23E_msiexec.0

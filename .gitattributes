@@ -1,0 +1,8 @@
+* text=auto eol=lf
+# Preserve the original file bytes recorded in SNAPSHOT.json.
+home/** -text
+*.png binary
+*.webp binary
+*.otf binary
+*.ttf binary
+*.tar.xz binary

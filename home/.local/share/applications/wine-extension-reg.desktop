@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=A Wine application
+MimeType=text/x-ms-regedit;
+Exec=env "WINEPREFIX=/home/hasegawa/hyprstack/motion-studio/.cache/windows-qa-prefix" wine start /ProgIDOpen "regfile" %f
+NoDisplay=true
+StartupNotify=true

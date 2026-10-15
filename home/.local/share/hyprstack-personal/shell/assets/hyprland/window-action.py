@@ -1,0 +1,1 @@
+../../../../hyprstack/shell/assets/hyprland/window-action.py

@@ -1,0 +1,14 @@
+[Unit]
+Description=Studio Mic - Carla headless processing
+After=pipewire.service wireplumber.service
+Wants=pipewire.service wireplumber.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/carla -n /home/hasegawa/.local/share/studio-mic/mic-runtime.carxp
+Restart=on-failure
+RestartSec=2
+TimeoutStopSec=8
+
+[Install]
+WantedBy=default.target

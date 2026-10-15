@@ -1,0 +1,1 @@
+../../../hyprstack/shell/assets/diagnostics.py
