@@ -7,6 +7,7 @@ cachyos-fish-config 16-1
 cachyos-zsh-config 1.0.3-1
 carla 2.5.10-4.1
 ddcutil 3.0.2-1
+discord 1:1.0.161-1
 easyeffects 8.3.0-1.1
 fastfetch 2.69.0-1.1
 firefox 157.0.1-1.1
@@ -27,6 +28,7 @@ pipewire 1:1.6.9-1
 pipewire-pulse 1:1.6.9-1
 pkgconf 3.0.7-1.1
 python 3.14.7-2
+qt5ct 1.9-2.1
 qt6-base 6.12.0-2.1
 qt6-declarative 6.12.0-1.1
 quickshell-git 0.3.1.r21.g11ca60b-1

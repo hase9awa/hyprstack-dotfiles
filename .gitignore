@@ -1,12 +1,12 @@
-# Publish the curated snapshot and its documentation only.
+# Personal configuration and required assets.
 /*
 !/.gitignore
 !/.gitattributes
 !/LICENSE
 !/README.md
 !/README.en.md
-!/SNAPSHOT.json
 !/home/
+!/system/
 !/assets/
 !/packages/
 
@@ -36,6 +36,7 @@
 **/fish_history
 **/notifs.json
 **/apps.sqlite*
+**/app-cache.json
 **/gpu-performance.json
 **/brightness.lock
 **/icon-theme.cache

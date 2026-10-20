@@ -51,12 +51,12 @@ if type(overrides) == "table" then
     end
 end
 
--- Default monitor conf
+-- Let Hyprland choose the mode, position and scale for each connected output.
 hl.monitor({
     output   = "",
     mode     = "preferred",
     position = "auto",
-    scale    = 1,
+    scale    = "auto",
 })
 
 -- Configs

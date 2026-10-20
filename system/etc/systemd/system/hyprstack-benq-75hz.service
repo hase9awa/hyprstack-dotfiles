@@ -1,0 +1,15 @@
+[Unit]
+Description=Personal BenQ GW2406Z 1080p 75 Hz EDID
+Requires=sys-kernel-debug.mount
+After=sys-kernel-debug.mount systemd-udev-settle.service
+Wants=systemd-udev-settle.service
+Before=display-manager.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 /etc/hyprstack/benq-75hz/benq-75hz.py apply
+RemainAfterExit=yes
+TimeoutStartSec=30
+
+[Install]
+WantedBy=graphical.target

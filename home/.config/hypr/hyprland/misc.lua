@@ -1,12 +1,6 @@
 local scheme = require("scheme.current")
 
 hl.config({
-    render = {
-        -- Use Hyprland's default frame scheduler. The optional third-buffer
-        -- scheduler can leave presentation waiting on a late NVIDIA fence
-        -- when an idle output wakes or a Chromium GPU process starts.
-        new_render_scheduling = false,
-    },
     misc = {
         animate_manual_resizes       = false,
         animate_mouse_windowdragging = false,

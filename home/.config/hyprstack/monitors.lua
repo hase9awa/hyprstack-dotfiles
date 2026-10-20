@@ -14,9 +14,11 @@ hl.monitor({
 	sdrbrightness = 1.0,
 })
 
+-- This 75 Hz timing is advertised by the personal EDID loaded at boot by
+-- hyprstack-benq-75hz.service; the stock EDID only advertises 1080p at 60 Hz.
 hl.monitor({
 	output = "desc:BNQ BenQ GW2406Z P4H0067101Q",
-	mode = "1920x1080@60",
+	mode = "modeline 165.000 1920 1928 1960 2000 1080 1083 1088 1100 +hsync +vsync",
 	position = "840x0",
 	scale = 1,
 	transform = 3,

@@ -1,0 +1,18 @@
+[Unit]
+Description=Warm Thorium, AyuGram and graphics libraries in the background
+After=hyprstack-session.service
+PartOf=hyprstack-session.service
+ConditionEnvironment=HYPRLAND_INSTANCE_SIGNATURE
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 %h/.local/libexec/hyprstack/app-cache.py
+RemainAfterExit=yes
+Nice=19
+IOSchedulingClass=idle
+CPUWeight=10
+IOWeight=10
+TimeoutStartSec=60
+
+[Install]
+WantedBy=hyprstack-session.service

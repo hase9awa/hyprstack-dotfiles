@@ -3,7 +3,8 @@ local fn   = require("utils.functions")
 
 hl.on("hyprland.start", function()
     if os.getenv("HYPRSTACK_NESTED") ~= "1" then
-        hl.exec_cmd(string.format("%q", os.getenv("HOME") .. "/.local/bin/hyprstack-session") .. " start")
+        local command = os.getenv("HYPRSTACK_SESSION_COMMAND") or os.getenv("HOME") .. "/.local/bin/hyprstack-session"
+        hl.exec_cmd(string.format("%q", command) .. " start")
     end
 end)
 

@@ -1,3 +1,0 @@
--- hyprmoncfg no longer writes this file.
--- Its generated monitor rules now live in /home/hasegawa/.config/hypr/hyprmoncfg-monitors.lua.
--- Anything you add here is yours to keep, but hyprmoncfg loads its own file after it.

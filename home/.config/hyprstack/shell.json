@@ -1,6 +1,9 @@
 {
     "appearance": {
         "scale": 1,
+        "themeSync": {
+            "enabled": true
+        },
         "transparency": {
             "base": 0.9779005524861879,
             "enabled": false
@@ -109,7 +112,7 @@
             "maxWindowIcons": 5,
             "occupiedBg": false,
             "perMonitor": true,
-            "showUnoccupied": false,
+            "showUnoccupied": true,
             "showWindows": true,
             "showWindowsOnSpecialWorkspaces": true,
             "shown": 10,
@@ -173,7 +176,7 @@
                 }
             ]
         },
-        "language": "ru_RU"
+        "language": "en_US"
     },
     "services": {
         "dataUnits": "Decimal",
@@ -182,7 +185,8 @@
         "weatherEnabled": true,
         "weatherLocation": "56.85225,53.19862",
         "weatherLocationLabel": "Ижевск, Удмуртия, Россия",
-        "weatherLocationName": "Ижевск"
+        "weatherLocationName": "Ижевск",
+        "weatherProvider": "open-meteo"
     },
     "utilities": {
         "enabled": true,

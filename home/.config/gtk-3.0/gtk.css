@@ -1,1 +1,4 @@
 @import 'colors.css';
+/* >>> Hyprstack theme >>> */
+@import url("hyprstack-colors.css");
+/* <<< Hyprstack theme <<< */

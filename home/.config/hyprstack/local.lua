@@ -9,3 +9,27 @@ hl.env("HYPRSTACK_SHELL_DIR", data .. "/hyprstack-personal/shell")
 hl.on("hyprland.start", function()
     hl.exec_cmd(home .. "/.local/bin/caelestia-session-start")
 end)
+
+-- Preserve the current NVIDIA frame scheduler across release updates.
+hl.config({ render = { new_render_scheduling = false } })
+
+-- Personal messaging apps. With the current per-monitor banks, workspace 21
+-- is HDMI-A-1's local workspace 1; workspace 2 belongs to the main DP-1.
+-- Class rules also cover launchers whose child processes lose exec rules.
+hl.window_rule({
+    name = "personal-discord-workspace",
+    match = { class = "(?i)^discord$" },
+    workspace = "21 silent",
+})
+hl.window_rule({
+    name = "personal-ayugram-workspace",
+    match = { class = "^com\\.ayugram\\.desktop$" },
+    workspace = "2 silent",
+})
+
+-- Start once per graphical login; a config reload does not restart the apps.
+hl.on("hyprland.start", function()
+    if os.getenv("HYPRSTACK_NESTED") == "1" then return end
+    hl.exec_cmd("/usr/bin/discord", { workspace = "21 silent" })
+    hl.exec_cmd(home .. "/.local/bin/AyuGram", { workspace = "2 silent" })
+end)

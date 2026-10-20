@@ -1,6 +1,7 @@
 * text=auto eol=lf
-# Preserve the original file bytes recorded in SNAPSHOT.json.
+# Preserve desktop configuration bytes.
 home/** -text
+*.bin binary
 *.png binary
 *.webp binary
 *.otf binary

@@ -277,4 +277,3 @@ bind_variable("kbClipboardPasteLatest",
     hl.dsp.exec_cmd('sleep 0.5s && ydotool type -d 1 "$(cliphist list | head -1 | cliphist decode)"'),
     locked
 )
-

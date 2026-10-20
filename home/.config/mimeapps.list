@@ -23,6 +23,8 @@ x-scheme-handler/http=org.chromium.Thorium.desktop;thorium-browser-avx2.desktop;
 x-scheme-handler/https=org.chromium.Thorium.desktop;thorium-browser-avx2.desktop;
 x-scheme-handler/tg=userapp-AyuGram Desktop-ZF0ZT3.desktop;
 x-scheme-handler/tonsite=userapp-AyuGram Desktop-9RILT3.desktop;
+video/mp4=org.kde.haruna.desktop;
+image/png=org.kde.gwenview.desktop;
 
 [Default Applications]
 application/json=nvim.desktop;

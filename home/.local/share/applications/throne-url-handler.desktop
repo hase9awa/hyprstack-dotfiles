@@ -2,7 +2,7 @@
 Type=Application
 Name=Throne
 Icon=/home/hasegawa/.local/share/Throne/throne.png
-Exec="/opt/Throne/Throne" %U
+Exec=env QT_QPA_PLATFORMTHEME=gtk3 "/opt/Throne/Throne" %U
 MimeType=x-scheme-handler/throne;application/json;application/yaml;text/yaml;
 Terminal=false
 NoDisplay=true
