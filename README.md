@@ -5,6 +5,8 @@
 Мои настройки [Hyprstack](https://github.com/hase9awa/hyprstack-shell) для
 CachyOS, Hyprland 0.56.2 и NVIDIA RTX 3060 Ti.
 
+Снимок обновлён **24.10.2026** для **Hyprstack 1.2.0**.
+
 | Монитор | Режим | Автозапуск |
 | --- | --- | --- |
 | DP-1 · P275MR+ | 2560×1440, 200 Гц, HDR | AyuGram на воркспейсе 2 |
@@ -15,10 +17,17 @@ CachyOS, Hyprland 0.56.2 и NVIDIA RTX 3060 Ti.
 [system/](system/) содержит службу и EDID для 75 Гц на моём BenQ.
 Первый воркспейс второго монитора имеет внутренний номер **21**.
 
+Включены кнопка VPN на основной панели и быстрые действия VPN. Профили,
+подписки, пароли и сетевые ядра в репозиторий не входят: после восстановления
+импортируйте свои профили через **Настройки → Сеть → Настройки VPN**.
+EasyEffects и Discord при автозапуске ожидают готовности трея через
+`wait-for-tray`, чтобы значки не терялись при входе.
+
 ## Восстановление
 
 Сначала установите [основную оболочку](https://github.com/hase9awa/hyprstack-shell)
-и приложения. Версии зависимостей — в [packages/versions.txt](packages/versions.txt).
+версии **1.2.0** или новее и приложения. Версии зависимостей —
+в [packages/versions.txt](packages/versions.txt).
 HDR-модуль собирается под установленный Hyprland; нужны Make, C++23 и заголовки
 его зависимостей.
 
@@ -58,6 +67,10 @@ sudo systemctl enable --now hyprstack-benq-75hz.service
 После копирования войдите в Hyprland заново. На другом компьютере измените
 [monitors.lua](home/.config/hyprstack/monitors.lua) и пути `/home/hasegawa`.
 Программы и аудиоплагины Studio Mic устанавливаются отдельно.
+
+Локальная сборка Quickshell и бинарный HDR-модуль не включены. Патч обнаружения
+значков и указания по сборке Quickshell сохранены в
+[основном репозитории](https://github.com/hase9awa/hyprstack-shell/blob/main/MAINTENANCE.md#диагностика).
 
 ## Лицензии
 

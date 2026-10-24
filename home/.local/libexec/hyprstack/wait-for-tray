@@ -1,0 +1,34 @@
+#!/usr/bin/env python3
+"""Wait for the session tray before starting an application that probes it once."""
+import argparse
+import os
+import subprocess
+import sys
+import time
+
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument("--timeout", type=float, default=20)
+parser.add_argument("command", nargs=argparse.REMAINDER)
+args = parser.parse_args()
+deadline = time.monotonic() + max(0, args.timeout)
+probe = [
+    "/usr/bin/busctl", "--user", "--timeout=1", "get-property",
+    "org.kde.StatusNotifierWatcher", "/StatusNotifierWatcher",
+    "org.kde.StatusNotifierWatcher", "IsStatusNotifierHostRegistered",
+]
+
+while True:
+    try:
+        result = subprocess.run(probe, stdin=subprocess.DEVNULL, stdout=subprocess.PIPE,
+                                stderr=subprocess.DEVNULL, text=True, timeout=2)
+        if result.returncode == 0 and result.stdout.split() == ["b", "true"]:
+            break
+    except (OSError, subprocess.TimeoutExpired):
+        pass
+    if time.monotonic() >= deadline:
+        print("wait-for-tray: tray is not ready; continuing application startup", file=sys.stderr)
+        break
+    time.sleep(min(.15, max(0, deadline - time.monotonic())))
+
+if args.command:
+    os.execvp(args.command[0], args.command)

@@ -5,6 +5,8 @@
 My [Hyprstack](https://github.com/hase9awa/hyprstack-shell) configuration for
 CachyOS, Hyprland 0.56.2 and an NVIDIA RTX 3060 Ti.
 
+Snapshot updated on **2026-10-24** for **Hyprstack 1.2.0**.
+
 | Display | Mode | Autostart |
 | --- | --- | --- |
 | DP-1 · P275MR+ | 2560×1440, 200 Hz, HDR | AyuGram on workspace 2 |
@@ -15,10 +17,16 @@ terminals, Neovim, fonts, wallpapers, personal shell extensions and Studio Mic.
 [system/](system/) contains the EDID and boot service for my BenQ's 75 Hz mode.
 The second display's first workspace has the internal ID **21**.
 
+The main taskbar VPN icon and VPN quick action are enabled. Profiles,
+subscriptions, passwords and network cores are excluded: import your profiles
+after restoring through **Settings → Network → VPN settings**. EasyEffects and
+Discord wait for the tray through `wait-for-tray` during autostart so their
+icons are available after login.
+
 ## Restore
 
-Install the [base shell](https://github.com/hase9awa/hyprstack-shell) and applications
-first. Dependency versions are listed in [packages/versions.txt](packages/versions.txt).
+Install the [base shell](https://github.com/hase9awa/hyprstack-shell) **1.2.0** or newer
+and applications first. Dependency versions are listed in [packages/versions.txt](packages/versions.txt).
 The HDR plugin requires Make, C++23 and development headers matching the installed
 Hyprland and its dependencies.
 
@@ -58,6 +66,10 @@ sudo systemctl enable --now hyprstack-benq-75hz.service
 Log out and back into Hyprland. On another machine, adjust
 [monitors.lua](home/.config/hyprstack/monitors.lua) and `/home/hasegawa` paths.
 Studio Mic applications and audio plugins are installed separately.
+
+The local Quickshell build and compiled HDR plugin are excluded. The tray
+discovery patch and Quickshell build notes are available in the
+[base repository](https://github.com/hase9awa/hyprstack-shell/blob/main/MAINTENANCE.md#диагностика).
 
 ## Licences
 

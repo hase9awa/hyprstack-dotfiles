@@ -1,0 +1,1 @@
+../../../hyprstack/shell/assets/vpn_profiles.py

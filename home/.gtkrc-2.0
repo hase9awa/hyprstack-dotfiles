@@ -1,5 +1,5 @@
 gtk-enable-animations=1
-gtk-theme-name="Breeze-Dark"
+gtk-theme-name="Hyprstack"
 gtk-primary-button-warps-slider=1
 gtk-toolbar-style=3
 gtk-menu-images=1

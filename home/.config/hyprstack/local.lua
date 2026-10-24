@@ -28,8 +28,9 @@ hl.window_rule({
 })
 
 -- Start once per graphical login; a config reload does not restart the apps.
+-- Start tray clients after the watcher exists; some clients only probe it once.
 hl.on("hyprland.start", function()
     if os.getenv("HYPRSTACK_NESTED") == "1" then return end
-    hl.exec_cmd("/usr/bin/discord", { workspace = "21 silent" })
+    hl.exec_cmd(home .. "/.local/libexec/hyprstack/wait-for-tray /usr/bin/discord", { workspace = "21 silent" })
     hl.exec_cmd(home .. "/.local/bin/AyuGram", { workspace = "2 silent" })
 end)

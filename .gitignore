@@ -66,6 +66,9 @@
 /home/.config/pulse/
 /home/.config/mozilla/
 /home/.config/discord/
+/home/.config/Throne/
+/home/.local/share/hyprstack/vpn/
+/home/.local/share/hyprstack/runtime/
 
 # No application binaries or unrelated user units.
 /home/.local/bin/*
