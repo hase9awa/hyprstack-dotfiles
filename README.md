@@ -5,7 +5,7 @@
 Мои настройки [Hyprstack](https://github.com/hase9awa/hyprstack-shell) для
 CachyOS, Hyprland 0.56.2 и NVIDIA RTX 3060 Ti.
 
-Снимок обновлён **25.10.2026** для **Hyprstack 1.2.1**.
+Снимок обновлён **25.10.2026** для **Hyprstack 1.2.2**.
 
 | Монитор | Режим | Автозапуск |
 | --- | --- | --- |
