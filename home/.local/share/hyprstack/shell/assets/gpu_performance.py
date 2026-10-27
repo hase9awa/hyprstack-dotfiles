@@ -10,6 +10,11 @@ import os
 from pathlib import Path
 import signal
 import threading
+import time
+
+
+PERFORMANCE_MODE = 1
+CHECK_INTERVAL = 1.0
 
 
 class Modes(ctypes.Structure):
@@ -25,6 +30,7 @@ class PowerMizer:
             ("nvmlDeviceGetHandleByIndex_v2",[ctypes.c_uint,ctypes.POINTER(ctypes.c_void_p)]),
             ("nvmlDeviceGetPowerMizerMode_v1",[ctypes.c_void_p,ctypes.POINTER(Modes)]),
             ("nvmlDeviceSetPowerMizerMode_v1",[ctypes.c_void_p,ctypes.POINTER(Modes)]),
+            ("nvmlDeviceGetPerformanceState",[ctypes.c_void_p,ctypes.POINTER(ctypes.c_uint)]),
         ):
             function = getattr(self.lib,name)
             function.argtypes = arguments
@@ -48,6 +54,24 @@ class PowerMizer:
         modes = Modes(requested=value)
         self.check(self.lib.nvmlDeviceSetPowerMizerMode_v1(self.device,ctypes.byref(modes)))
 
+    def performance_state(self):
+        state = ctypes.c_uint()
+        self.check(self.lib.nvmlDeviceGetPerformanceState(self.device,ctypes.byref(state)))
+        return state.value
+
+
+def enforce(power):
+    mode = power.mode().current
+    state = power.performance_state()
+    # A client's cached preference can remain 1 after the GPU has fallen back
+    # to P5/P8. Renew that vote using the physical state as well as the API mode.
+    changed = mode != PERFORMANCE_MODE or state >= 5
+    if changed:
+        power.set(PERFORMANCE_MODE)
+        if power.mode().current != PERFORMANCE_MODE:
+            raise RuntimeError("NVIDIA did not accept the performance preference")
+    return changed, mode, state
+
 
 def main():
     stop = threading.Event()
@@ -56,22 +80,34 @@ def main():
     state = Path(os.environ.get("XDG_STATE_HOME",str(Path.home()/".local/state"))) / "hyprstack/gpu-performance.json"
     power = PowerMizer()
     previous = power.mode().current
-    if not power.mode().supported & (1 << 1):
+    if not power.mode().supported & (1 << PERFORMANCE_MODE):
         raise RuntimeError("GPU does not support the stock performance preference")
     state.parent.mkdir(parents=True,exist_ok=True,mode=0o700)
+    recoveries = 0
+
+    def record():
+        temporary = state.with_name(state.name + ".tmp")
+        temporary.write_text(json.dumps({"mode":PERFORMANCE_MODE,"previous":previous,"pid":os.getpid(),
+            "session":os.environ.get("HYPRLAND_INSTANCE_SIGNATURE"),"recoveries":recoveries,
+            "updated":time.time()})+"\n")
+        temporary.replace(state)
+
     try:
-        # On Wayland, this preference belongs to the NVML client. A short
-        # nvidia-settings invocation releases it as soon as nvmlShutdown runs.
-        # Keep this client alive for the session, without polling or rendering.
-        power.set(1)
-        if power.mode().current != 1:
-            raise RuntimeError("NVIDIA did not accept the performance preference")
-        state.write_text(json.dumps({"mode":1,"previous":previous,"pid":os.getpid(),
-            "session":os.environ.get("HYPRLAND_INSTANCE_SIGNATURE")})+"\n")
+        # A live NVML client alone does not guarantee that the global preference
+        # survives other clients or driver state changes. Check once a second;
+        # only write to the driver and state file when the preference drifts.
+        enforce(power)
+        record()
         print("NVIDIA desktop performance enabled; previous preference:",previous,flush=True)
-        stop.wait()
+        while not stop.wait(CHECK_INTERVAL):
+            changed, mode, performance_state = enforce(power)
+            if changed:
+                recoveries += 1
+                record()
+                print("NVIDIA performance preference renewed; client mode",mode,
+                    "GPU P"+str(performance_state),"recovery",recoveries,flush=True)
     finally:
-        # Release only this client's preference; other applications keep theirs.
+        # Return to the preference observed before this desktop session.
         power.set(previous)
         power.check(power.lib.nvmlShutdown())
         state.unlink(missing_ok=True)
