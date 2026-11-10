@@ -3,9 +3,9 @@
 # Hyprstack dotfiles
 
 Мои настройки [Hyprstack](https://github.com/hase9awa/hyprstack-shell) для
-CachyOS, Hyprland 0.56.2 и NVIDIA RTX 3060 Ti.
+CachyOS, Hyprland 0.57.1 и NVIDIA RTX 3060 Ti.
 
-Снимок обновлён **25.10.2026** для **Hyprstack 1.2.2**.
+Снимок обновлён **10.11.2026** для **Hyprstack 1.4.7**.
 
 | Монитор | Режим | Автозапуск |
 | --- | --- | --- |
@@ -16,6 +16,10 @@ CachyOS, Hyprland 0.56.2 и NVIDIA RTX 3060 Ti.
 терминалы, Neovim, шрифты, обои, личные расширения оболочки и Studio Mic.
 [system/](system/) содержит службу и EDID для 75 Гц на моём BenQ.
 Первый воркспейс второго монитора имеет внутренний номер **21**.
+Позиции: DP-1 — `1920x0`, левый вертикальный HDMI-A-1 — `840x-360`.
+На основном экране включён VRR; личный `vrr-guard` поддерживает обновление
+статичного рабочего стола. Его исходники и служба включены в снимок.
+Экран входа и его системные настройки остаются только на моём ПК.
 
 Включены кнопка VPN на основной панели и быстрые действия VPN. Профили,
 подписки, пароли и сетевые ядра в репозиторий не входят: после восстановления
@@ -26,8 +30,9 @@ EasyEffects и Discord при автозапуске ожидают готовн
 ## Восстановление
 
 Сначала установите [основную оболочку](https://github.com/hase9awa/hyprstack-shell)
-версии **1.2.0** или новее и приложения. Версии зависимостей —
-в [packages/versions.txt](packages/versions.txt).
+версии **1.4.7** или новее и приложения. Версии зависимостей —
+в [packages/versions.txt](packages/versions.txt), фактически используемая версия
+локального Quickshell — в [packages/runtime.txt](packages/runtime.txt).
 HDR-модуль собирается под установленный Hyprland; нужны Make, C++23 и заголовки
 его зависимостей.
 
@@ -35,6 +40,7 @@ HDR-модуль собирается под установленный Hyprland
 git clone https://github.com/hase9awa/hyprstack-dotfiles.git
 cd hyprstack-dotfiles
 make -C home/.local/share/hyprstack-personal/native/hdr-reference
+make -C home/.local/share/hyprstack-personal/extras/vrr-guard
 
 dotfiles_backup="$HOME/hyprstack-dotfiles-backup.$(date +%Y%m%d-%H%M%S)"
 umask 077
@@ -77,6 +83,7 @@ sudo systemctl enable --now hyprstack-benq-75hz.service
 [GPL-3.0](LICENSE). Отдельно сохранены лицензии
 [Papirus](assets/licenses/Papirus-GPL-3.0.txt),
 [Hasklug](home/.local/share/fonts/hasklug-restore/LICENSE.md) и
-[Neovim](home/.config/nvim/LICENSE). Значки —
+[Neovim](home/.config/nvim/LICENSE) и
+[FlickrFree/MIT](home/.local/share/hyprstack-personal/extras/vrr-guard/LICENSE.flickrfree). Значки —
 [Papirus Development Team](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme);
 изображения сохраняют права своих авторов.

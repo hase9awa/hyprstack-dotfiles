@@ -1,1 +1,1 @@
-{"initialized":true,"secondary_monitor":"HDMI-A-1","per_monitor":true,"count":10,"secondary_on_special":true,"monitor_bases":{"DP-1":0,"HDMI-A-1":20,"HDMI-A-2":10}}
+{"secondary_monitor":"HDMI-A-1","initialized":true,"secondary_on_special":true,"count":10,"per_monitor":true,"monitor_bases":{"HDMI-A-2":10,"DP-1":0,"HDMI-A-1":20}}

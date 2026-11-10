@@ -20,3 +20,8 @@ end
 pcall(function()
 	hl.plugin.hdr_reference.sdr_client("thorium-browser")
 end)
+
+-- BEGIN HYPRSTACK VRR GUARD
+-- Keep this VRR desktop refreshing even when clients stop updating.
+hl.config({ cursor = { no_break_fs_vrr = 1, min_refresh_rate = 60 } }); hl.layer_rule({ match = { namespace = "^hyprstack-vrr-guard$" }, no_anim = true })
+-- END HYPRSTACK VRR GUARD

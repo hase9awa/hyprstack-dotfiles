@@ -3,9 +3,9 @@
 # Hyprstack dotfiles
 
 My [Hyprstack](https://github.com/hase9awa/hyprstack-shell) configuration for
-CachyOS, Hyprland 0.56.2 and an NVIDIA RTX 3060 Ti.
+CachyOS, Hyprland 0.57.1 and an NVIDIA RTX 3060 Ti.
 
-Snapshot updated on **2026-10-25** for **Hyprstack 1.2.2**.
+Snapshot updated on **2026-11-10** for **Hyprstack 1.4.7**.
 
 | Display | Mode | Autostart |
 | --- | --- | --- |
@@ -16,6 +16,10 @@ Snapshot updated on **2026-10-25** for **Hyprstack 1.2.2**.
 terminals, Neovim, fonts, wallpapers, personal shell extensions and Studio Mic.
 [system/](system/) contains the EDID and boot service for my BenQ's 75 Hz mode.
 The second display's first workspace has the internal ID **21**.
+Positions: DP-1 at `1920x0`, portrait HDMI-A-1 on the left at `840x-360`.
+VRR is enabled on the main display; the personal `vrr-guard` keeps a static
+desktop refreshing. Its source and user service are included.
+The login screen and its system settings stay local to my PC.
 
 The main taskbar VPN icon and VPN quick action are enabled. Profiles,
 subscriptions, passwords and network cores are excluded: import your profiles
@@ -25,8 +29,10 @@ icons are available after login.
 
 ## Restore
 
-Install the [base shell](https://github.com/hase9awa/hyprstack-shell) **1.2.0** or newer
-and applications first. Dependency versions are listed in [packages/versions.txt](packages/versions.txt).
+Install the [base shell](https://github.com/hase9awa/hyprstack-shell) **1.4.7** or newer
+and applications first. Package versions are listed in
+[packages/versions.txt](packages/versions.txt); the active local Quickshell version
+is recorded in [packages/runtime.txt](packages/runtime.txt).
 The HDR plugin requires Make, C++23 and development headers matching the installed
 Hyprland and its dependencies.
 
@@ -34,6 +40,7 @@ Hyprland and its dependencies.
 git clone https://github.com/hase9awa/hyprstack-dotfiles.git
 cd hyprstack-dotfiles
 make -C home/.local/share/hyprstack-personal/native/hdr-reference
+make -C home/.local/share/hyprstack-personal/extras/vrr-guard
 
 dotfiles_backup="$HOME/hyprstack-dotfiles-backup.$(date +%Y%m%d-%H%M%S)"
 umask 077
@@ -76,6 +83,7 @@ discovery patch and Quickshell build notes are available in the
 [GPL-3.0](LICENSE). Separate licences are included for
 [Papirus](assets/licenses/Papirus-GPL-3.0.txt),
 [Hasklug](home/.local/share/fonts/hasklug-restore/LICENSE.md) and
-[Neovim](home/.config/nvim/LICENSE). Icons are by
+[Neovim](home/.config/nvim/LICENSE) and
+[FlickrFree/MIT](home/.local/share/hyprstack-personal/extras/vrr-guard/LICENSE.flickrfree). Icons are by
 [Papirus Development Team](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme).
 Images retain their authors' rights.

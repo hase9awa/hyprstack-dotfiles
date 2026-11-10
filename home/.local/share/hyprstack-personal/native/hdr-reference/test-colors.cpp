@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 #include <hyprland/src/plugins/PluginAPI.hpp>
 #include <hyprland/src/desktop/state/WindowState.hpp>
-#include <hyprland/src/desktop/view/Window.hpp>
+#include <hyprland/src/desktop/view/window/Window.hpp>
 #include <hyprland/src/protocols/core/Compositor.hpp>
 #include <hyprland/src/protocols/ColorManagement.hpp>
 #include <hyprland/src/state/MonitorState.hpp>
@@ -19,7 +19,7 @@ static int status(lua_State* L) {
     lua_newtable(L); int i=0;
     for (const auto& w:Desktop::windowState()->windows()) {
         if (!w->resource()) continue;
-        lua_newtable(L); number(L,"pid",w->getPID()); string(L,"title",w->m_title);
+        lua_newtable(L); number(L,"pid",w->backend().pid()); string(L,"title",w->metadata().title());
         lua_newtable(L); int j=0;
         w->resource()->breadthfirst([&](SP<CWLSurfaceResource> s,const Vector2D&,void*) {
             lua_newtable(L); number(L,"id",s->id()); number(L,"main",s==w->resource());

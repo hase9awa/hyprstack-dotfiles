@@ -4,7 +4,7 @@
 // per-surface feedback overrides the high-precision output format selection.
 #pragma once
 #include <hyprland/src/desktop/state/WindowState.hpp>
-#include <hyprland/src/desktop/view/Window.hpp>
+#include <hyprland/src/desktop/view/window/Window.hpp>
 #include <hyprland/src/protocols/core/Compositor.hpp>
 
 namespace {
@@ -20,7 +20,7 @@ std::vector<SPreferredOutput> preferredOutputs;
 bool clientNeedsSDR(wl_client* client) {
     return std::ranges::any_of(Desktop::windowState()->windows(), [&](const auto& window) {
         return window->resource() && window->resource()->client() == client &&
-            std::ranges::find(sdrClients, window->m_class) != sdrClients.end();
+            std::ranges::find(sdrClients, window->metadata().appID()) != sdrClients.end();
     });
 }
 

@@ -8,7 +8,7 @@ hl.monitor({
 	scale = 1,
 	bitdepth = 10,
 	cm = "hdr",
-	vrr = 0,
+	vrr = 1,
 	sdr_min_luminance = 0,
 	sdr_max_luminance = 350,
 	sdrbrightness = 1.0,
@@ -19,7 +19,7 @@ hl.monitor({
 hl.monitor({
 	output = "desc:BNQ BenQ GW2406Z P4H0067101Q",
 	mode = "modeline 165.000 1920 1928 1960 2000 1080 1083 1088 1100 +hsync +vsync",
-	position = "840x0",
+	position = "840x-360",
 	scale = 1,
 	transform = 3,
 })

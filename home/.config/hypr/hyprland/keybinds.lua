@@ -177,7 +177,7 @@ bind_variable("kbWindowGroupCycleNext", hl.dsp.group.next(), repeating)
 bind_variable("kbWindowGroupCyclePrev", hl.dsp.group.prev(), repeating)
 bind_variable("kbToggleGroup", hl.dsp.group.toggle())
 bind_variable("kbUngroup", hl.dsp.window.move({ out_of_group = true }))
-bind_variable("kbGroupLockActive", hl.dsp.group.lock_active())
+bind_variable("kbGroupLockActive", hl.dsp.group.lock())
 
 -- Window actions
 for _, dir in ipairs({ "left", "right", "up", "down" }) do
@@ -213,7 +213,44 @@ bind_variable("kbPinWindow", hl.dsp.window.pin())
 bind_variable("kbWindowFullscreen", hl.dsp.window.fullscreen({ mode = "fullscreen" }))
 bind_variable("kbWindowBorderedFullscreen", hl.dsp.window.fullscreen({ mode = "maximized" }))
 bind_variable("kbToggleWindowFloating", hl.dsp.window.float())
-bind_variable("kbCloseWindow", hl.dsp.window.close())
+-- The shell draws its own dialogs and menus as layer surfaces, which the
+-- compositor does not count as windows and so cannot close. The shell leaves
+-- a mark while it has one up; without it the key closes a window as it always
+-- has, whether or not the shell is running.
+local dialog_flag = os.getenv("XDG_RUNTIME_DIR") and os.getenv("HYPRLAND_INSTANCE_SIGNATURE")
+    and (os.getenv("XDG_RUNTIME_DIR") .. "/hyprstack-dialogs-" .. os.getenv("HYPRLAND_INSTANCE_SIGNATURE"))
+
+local function shell_dialog_open()
+    if not dialog_flag then return false end
+    local file = io.open(dialog_flag, "r")
+    if not file then return false end
+    local mark = file:read("*l")
+    file:close()
+    return mark == "1"
+end
+
+local function close_window_action()
+    local dialog_release = false
+    return function()
+        -- A global shortcut asks Hyprland to invoke this callback again on
+        -- release. Keep that release with the dialog even if it has already
+        -- disappeared; checking the flag again would close the app underneath.
+        if dialog_release then
+            dialog_release = false
+            hl.dispatch(hl.dsp.global("hyprstack:closeDialog"))
+        elseif shell_dialog_open() then
+            dialog_release = true
+            hl.dispatch(hl.dsp.global("hyprstack:closeDialog"))
+        else
+            hl.dispatch(hl.dsp.window.close())
+        end
+    end
+end
+
+-- Each configured chord owns its press/release pair independently.
+for _, key in ipairs(flatten_keybinds(vars.kbCloseWindow)) do
+    create_bind(key, close_window_action(), nil, descriptions.kbCloseWindow)
+end
 
 -- Special workspace toggles
 bind_variable("kbSpecialWs", fn.toggle("specialws"))
@@ -270,9 +307,8 @@ create_bind(
 bind_variable("kbSleep", hl.dsp.exec_cmd(vars.sleepGestureCmd), locked)
 
 -- Clipboard and emoji picker
-bind_variable("kbClipboard", hl.dsp.exec_cmd("pkill fuzzel || hyprstack clipboard"))
-bind_variable("kbClipboardDel", hl.dsp.exec_cmd("pkill fuzzel || hyprstack clipboard -d"))
-bind_variable("kbEmoji", hl.dsp.exec_cmd("pkill fuzzel || hyprstack emoji -p"))
+bind_variable("kbClipboard", hl.dsp.exec_cmd("hyprstack clipboard"))
+bind_variable("kbEmoji", hl.dsp.exec_cmd("hyprstack emoji"))
 bind_variable("kbClipboardPasteLatest",
     hl.dsp.exec_cmd('sleep 0.5s && ydotool type -d 1 "$(cliphist list | head -1 | cliphist decode)"'),
     locked

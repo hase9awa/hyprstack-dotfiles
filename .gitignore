@@ -76,3 +76,16 @@
 !/home/.local/bin/caelestia-session-start
 !/home/.local/bin/studio-mic-router
 /home/.config/systemd/user/local-llm.service
+
+# System settings are limited to the existing BenQ EDID service.
+/system/*
+!/system/etc/
+/system/etc/*
+!/system/etc/hyprstack/
+!/system/etc/systemd/
+/system/etc/hyprstack/*
+!/system/etc/hyprstack/benq-75hz/
+/system/etc/systemd/*
+!/system/etc/systemd/system/
+/system/etc/systemd/system/*
+!/system/etc/systemd/system/hyprstack-benq-75hz.service

@@ -1,0 +1,1 @@
+../../../hyprstack/shell/assets/share_picker.py

@@ -5,7 +5,7 @@ return {
     editor = "codium",
     fileExplorer = "thunar",
     audioSettings = "pwvucontrol",
-    cursorTheme = "sweet-cursors",
+    cursorTheme = "Adwaita",
     cursorSize = 24,
     kbTerminal = "SUPER + Return",
     kbLock = "CTRL + SUPER + L",

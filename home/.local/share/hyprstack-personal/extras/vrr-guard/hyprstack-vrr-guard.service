@@ -1,0 +1,16 @@
+[Unit]
+Description=Keep the static VRR desktop refreshing
+After=hyprstack-session.service
+PartOf=graphical-session.target hyprstack-session.service
+BindsTo=hyprstack-session.service
+ConditionEnvironment=HYPRLAND_INSTANCE_SIGNATURE
+
+[Service]
+Type=exec
+ExecStart=/usr/bin/python3 %h/.local/share/hyprstack-personal/extras/vrr-guard/guard.py --pixel %h/.local/share/hyprstack-personal/extras/vrr-guard/build/hyprstack-vrr-pixel
+Restart=on-failure
+RestartSec=2
+TimeoutStopSec=5
+
+[Install]
+WantedBy=hyprstack-session.service

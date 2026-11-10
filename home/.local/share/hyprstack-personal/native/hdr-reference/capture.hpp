@@ -28,10 +28,10 @@ bool captureManaged(const PHLMONITOR& monitor) {
         monitor->m_imageDescription->value().transferFunction == CM_TRANSFER_FUNCTION_ST2084_PQ;
 }
 
-using WindowFunction = void (*)(Screenshare::CScreenshareFrame*);
-void captureWindow(Screenshare::CScreenshareFrame* frame) {
-    const auto monitor = g_pHyprRenderer->m_renderData.pMonitor.lock();
-    const auto framebuffer = g_pHyprRenderer->m_renderData.currentFB;
+using WindowFunction = void (*)(Screenshare::CScreenshareFrame*, Render::CRenderContext&);
+void captureWindow(Screenshare::CScreenshareFrame* frame, Render::CRenderContext& ctx) {
+    const auto monitor = ctx.m_data.pMonitor.lock();
+    const auto framebuffer = ctx.m_data.currentFB;
     if (captureManaged(monitor) && framebuffer) {
         std::erase_if(windowCaptureOutputs, [](const auto& output) { return output.monitor.expired(); });
         auto output = std::ranges::find_if(windowCaptureOutputs, [&](const auto& output) { return output.monitor == monitor; });
@@ -49,7 +49,7 @@ void captureWindow(Screenshare::CScreenshareFrame* frame) {
         // passes actually run, including both SHM and DMA-BUF captures.
         framebuffer->setImageDescription(output->description);
     }
-    reinterpret_cast<WindowFunction>(windowHook->m_original)(frame);
+    reinterpret_cast<WindowFunction>(windowHook->m_original)(frame, ctx);
 }
 
 using CopyFunction = bool (*)(Monitor::CMonitor*);
@@ -59,11 +59,11 @@ bool captureNeedsCopy(Monitor::CMonitor* monitor) {
     return reinterpret_cast<CopyFunction>(copyHook->m_original)(monitor);
 }
 
-using MirrorFunction = bool (*)(Render::GL::CHyprOpenGLImpl*, const CBox&);
-bool captureMirror(Render::GL::CHyprOpenGLImpl* backend, const CBox& box) {
-    const auto monitor = g_pHyprRenderer->m_renderData.pMonitor.lock();
+using MirrorFunction = bool (*)(Render::GL::CHyprOpenGLImpl*, Render::CRenderContext&, const CBox&);
+bool captureMirror(Render::GL::CHyprOpenGLImpl* backend, Render::CRenderContext& ctx, const CBox& box) {
+    const auto monitor = ctx.m_data.pMonitor.lock();
     if (!captureManaged(monitor))
-        return reinterpret_cast<MirrorFunction>(mirrorHook->m_original)(backend, box);
+        return reinterpret_cast<MirrorFunction>(mirrorHook->m_original)(backend, ctx, box);
     const auto framebuffer = monitor->resources()->mirrorFB();
     framebuffer->setImageDescription(DEFAULT_SRGB_IMAGE_DESCRIPTION->with({
         .min = monitor->m_sdrMinLuminance,
@@ -73,17 +73,20 @@ bool captureMirror(Render::GL::CHyprOpenGLImpl* backend, const CBox& box) {
         bool value;
         ~Restore() { convertingCapture = value; }
     } restore{std::exchange(convertingCapture, true)};
-    return reinterpret_cast<MirrorFunction>(mirrorHook->m_original)(backend, box);
+    return reinterpret_cast<MirrorFunction>(mirrorHook->m_original)(backend, ctx, box);
 }
 
-using SettingsFunction = Render::SCMSettings (*)(Render::IHyprRenderer*, PImageDescription,
-    PImageDescription, SP<CWLSurfaceResource>, bool, float, int, bool);
-Render::SCMSettings captureSettings(Render::IHyprRenderer* renderer, PImageDescription source,
-    PImageDescription target, SP<CWLSurfaceResource> surface, bool modifySDR,
+// Borrow the non-trivial by-value arguments using their Itanium ABI pointers.
+// Internal optimized calls may leave an unused null surface uninitialized when
+// shouldUseSurface is false; copying that argument in the hook is invalid.
+using SettingsFunction = Render::SCMSettings (*)(Render::IHyprRenderer*, Render::CRenderContext&, const PImageDescription&,
+    const PImageDescription&, const SP<CWLSurfaceResource>&, bool, float, int, bool);
+Render::SCMSettings captureSettings(Render::IHyprRenderer* renderer, Render::CRenderContext& ctx, const PImageDescription& source,
+    const PImageDescription& target, const SP<CWLSurfaceResource>& surface, bool modifySDR,
     float minimum, int maximum, bool shouldUseSurface) {
     auto settings = reinterpret_cast<SettingsFunction>(settingsHook->m_original)(
-        renderer, source, target, surface, modifySDR, minimum, maximum, shouldUseSurface);
-    const auto monitor = renderer->m_renderData.pMonitor.lock();
+        renderer, ctx, source, target, surface, modifySDR, minimum, maximum, shouldUseSurface);
+    const auto monitor = ctx.m_data.pMonitor.lock();
     const bool windowCapture = captureManaged(monitor) && std::ranges::any_of(windowCaptureOutputs,
         [&](const auto& output) { return output.monitor == monitor && output.description == target; });
     if (convertingCapture || windowCapture) {
@@ -110,7 +113,7 @@ void removeCaptureHooks(HANDLE handle) {
     convertingCapture = false;
     windowCaptureOutputs.clear();
     if (!g_pHyprRenderer) return;
-    g_pHyprRenderer->clearCMSettingsCache();
+    g_pHyprRenderer->clearCMSettingsCache(g_pHyprRenderer->context());
     for (const auto& monitor : State::monitorState()->monitors()) {
         if (!managed(monitor)) continue;
         monitor->resources()->invalidateMirrorFB();

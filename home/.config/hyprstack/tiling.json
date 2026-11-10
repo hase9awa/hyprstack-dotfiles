@@ -1,1 +1,1 @@
-{"windowRounding":15,"gapsIn":5,"focusBorderColor":"palette_dragonBlue","focusOnHover":true,"gapsOut":25,"autoscroll":true,"desktopFrame":true,"focusBorderWidth":3,"gaps":true}
+{"desktopFrame":true,"gaps":true,"gapsIn":5,"gapsOut":25,"focusBorderWidth":3,"focusBorderColor":"palette_bright_aqua","focusBorderGradient":true,"focusBorderGradientEndColor":"primary","focusBorderGradientAngle":45,"windowRounding":15,"focusOnHover":true,"edgeScroll":true,"autoscroll":true,"focusHoverDelay":0}

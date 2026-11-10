@@ -1,0 +1,5 @@
+Hyprstack 1.4.7
+Hyprland v0.57.1
+Quickshell 0.3.1 (revision 11ca60be22b063478ed9586ca1d7f92f0f261caf, distributed by Unset)
+HDR reference plugin 1.2 (source included; rebuild for the installed Hyprland ABI)
+Quickshell uses the local Qt 6.12 runtime; its executable is not included.
